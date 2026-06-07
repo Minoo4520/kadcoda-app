@@ -1,0 +1,21 @@
+@import './theme/fonts.css';
+
+@import 'tailwindcss';
+@import './base.css';
+
+@import './theme/colors.css';
+
+* {
+  font-family: var(--font-yekanBakh);
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+@theme {
+  --font-yekanBakh: 'YekanBakh', 'sans-serif';
+
+  --spacing: 1px;
+}
