@@ -19,3 +19,9 @@ html {
 
   --spacing: 1px;
 }
+
+@utility container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
