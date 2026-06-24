@@ -1,5 +1,5 @@
 @layer base {
   body {
-    @apply font-semibold transition-all select-none;
+    @apply overflow-x-hidden font-semibold transition-all select-none;
   }
 }

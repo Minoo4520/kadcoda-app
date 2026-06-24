@@ -38,6 +38,7 @@ const eslintConfig = [
         'warn',
         { allowConstantExport: true },
       ],
+      'react/prop-types': 'off',
       'prettier/prettier': ['error', { endOfLine: 'auto' }],
       'import/first': 'error',
       'import/exports-last': 'error',

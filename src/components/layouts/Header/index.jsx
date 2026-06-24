@@ -1,10 +1,20 @@
 import { useState } from 'react';
 
+import Logo from './Logo';
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
+
+  const navItems = [
+    { id: 1, label: 'صفحه اصلی', href: '#' },
+    { id: 2, label: 'دوره ها', href: '#' },
+    { id: 3, label: 'دوره های حضوری', href: '#' },
+    { id: 4, label: 'درباره ما', href: '#' },
+    { id: 5, label: 'ارتباط با ما', href: '#' },
+  ];
 
   return (
     <>
@@ -14,46 +24,16 @@ function Header() {
             <Logo />
 
             <ul className="mr-27 hidden items-center gap-27 lg:flex">
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary text-gray-800 transition duration-200"
-                >
-                  صفحه اصلی
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary text-gray-800 transition duration-200"
-                >
-                  دوره ها
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary text-gray-800 transition duration-200"
-                >
-                  دوره های حضوری
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary text-gray-800 transition duration-200"
-                >
-                  درباره ما
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary text-gray-800 transition duration-200"
-                >
-                  ارتباط با ما
-                </a>
-              </li>
+              {navItems.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={item.href}
+                    className="hover:text-primary text-gray-800 transition duration-200"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
 
             <div className="mr-auto hidden lg:block"></div>
@@ -136,42 +116,16 @@ function Header() {
         </div>
 
         <nav className="flex flex-col gap-25 p-6">
-          <a
-            href="#"
-            onClick={closeMenu}
-            className="hover:bg-primary-100 hover:text-primary-500 rounded-lg px-4 py-10 text-lg font-medium text-gray-700 transition"
-          >
-            صفحه اصلی
-          </a>
-          <a
-            href="#"
-            onClick={closeMenu}
-            className="hover:bg-primary-100 hover:text-primary-500 rounded-lg px-4 py-10 text-lg font-medium text-gray-700 transition"
-          >
-            دوره ها
-          </a>
-          <a
-            href="#"
-            onClick={closeMenu}
-            className="hover:bg-primary-100 hover:text-primary-500 rounded-lg px-4 py-10 text-lg font-medium text-gray-700 transition"
-          >
-            دوره های حضوری
-          </a>
-          <a
-            href="#"
-            onClick={closeMenu}
-            className="hover:bg-primary-100 hover:text-primary-500 rounded-lg px-4 py-10 text-lg font-medium text-gray-700 transition"
-          >
-            درباره ما
-          </a>
-          <a
-            href="#"
-            onClick={closeMenu}
-            className="hover:bg-primary-100 hover:text-primary-500 rounded-lg px-4 py-10 text-lg font-medium text-gray-700 transition"
-          >
-            ارتباط با ما
-          </a>
-
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={item.href}
+              onClick={closeMenu}
+              className="hover:bg-primary-100 hover:text-primary-500 rounded-lg px-4 py-10 text-lg font-medium text-gray-700 transition"
+            >
+              {item.label}
+            </a>
+          ))}
           <div className="my-4 h-px bg-gray-200"></div>
           <a
             href="#"
@@ -195,14 +149,6 @@ function Header() {
         />
       )}
     </>
-  );
-}
-
-function Logo() {
-  return (
-    <h2 className="text-3xl font-bold lg:text-4xl">
-      کد<span className="text-primary-500">کدا</span>
-    </h2>
   );
 }
 
