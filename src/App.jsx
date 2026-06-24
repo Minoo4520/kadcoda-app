@@ -1,5 +1,11 @@
+import HomePage from './pages/homepage/index';
+
 const App = () => {
-  return <>درود بر جهانیان!</>;
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 };
 
 export default App;
