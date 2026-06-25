@@ -1,9 +1,10 @@
-import HomePage from './pages/homepage/index';
+import { RouterProvider } from 'react-router/dom';
 
+import router from './router/router';
 const App = () => {
   return (
     <>
-      <HomePage />
+      <RouterProvider router={router} />
     </>
   );
 };
