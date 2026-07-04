@@ -2,149 +2,51 @@
   --color-*: initial;
   --color-white: #ffffff;
 
-  --color-gray-900: #0f1411;
-  --color-gray-800: #1e2520;
-  --color-gray-700: #3a453f;
-  --color-gray-600: #55635c;
-  --color-gray-500: #718277;
-  --color-gray-400: #93a499;
-  --color-gray-300: #b6c5bc;
-  --color-gray-200: #d8e5dd;
-  --color-gray-100: #eaf2ed;
-  --color-gray-50: #f4f8f6;
-
-  --color-primary-900: #103417;
-  --color-primary-800: #164e22;
-  --color-primary-700: #1c662e;
-  --color-primary-600: #23833a;
-  --color-primary-500: #2adf69;
-  --color-primary-400: #57e687;
-  --color-primary-300: #82eca5;
-  --color-primary-200: #adf1c3;
-  --color-primary-100: #d8f8e1;
-  --color-primary-50: #edfcf1;
-
-  --color-secondary-900: #2b2214;
-  --color-secondary-800: #4a3c25;
-  --color-secondary-700: #735d3d;
-  --color-secondary-600: #9c8056;
-  --color-secondary-500: #c2a478;
-  --color-secondary-400: #d6be9a;
-  --color-secondary-300: #e7d6be;
-  --color-secondary-200: #f3ebd0;
-  --color-secondary-100: #f9f5e8;
-  --color-secondary-50: #fdfbf7;
-
-  --color-tertiary-900: #0b1a30;
-  --color-tertiary-800: #142d52;
-  --color-tertiary-700: #204475;
-  --color-tertiary-600: #2f5f9e;
-  --color-tertiary-500: #427bc4;
-  --color-tertiary-400: #6ea1de;
-  --color-tertiary-300: #9bc0ee;
-  --color-tertiary-200: #c5dbf7;
-  --color-tertiary-100: #e2eefb;
-  --color-tertiary-50: #f3f8fd;
-
-  --color-alcohol-900: #2c0b24;
-  --color-alcohol-800: #4a153d;
-  --color-alcohol-700: #732361;
-  --color-alcohol-600: #9c3384;
-  --color-alcohol-500: #c246a5;
-  --color-alcohol-400: #d670be;
-  --color-alcohol-300: #e79cd5;
-  --color-alcohol-200: #f3c5ea;
-  --color-alcohol-100: #f9e2f5;
-  --color-alcohol-50: #fdf5fb;
-
-  --color-warning-900: #331400;
-  --color-warning-800: #572200;
-  --color-warning-700: #853704;
-  --color-warning-600: #b34e0b;
-  --color-warning-500: #e06716;
-  --color-warning-400: #e88743;
-  --color-warning-300: #f0aa75;
-  --color-warning-200: #f7cca8;
-  --color-warning-100: #faebd9;
-  --color-warning-50: #fff6ed;
-
-  --color-success-900: #042409;
-  --color-success-800: #0a3d13;
-  --color-success-700: #136121;
-  --color-success-600: #1f8532;
-  --color-success-500: #2caa46;
-  --color-success-400: #5cbd72;
-  --color-success-300: #8cd19d;
-  --color-success-200: #bde5c8;
-  --color-success-100: #def4e5;
-  --color-success-50: #f2fbf5;
-
-  --color-error-900: #2d0a0a;
-  --color-error-800: #4f1414;
-  --color-error-700: #7a2222;
-  --color-error-600: #a63232;
-  --color-error-500: #cf4242;
-  --color-error-400: #da6a6a;
-  --color-error-300: #e59393;
-  --color-error-200: #f0bebe;
-  --color-error-100: #f9e1e1;
-  --color-error-50: #fdf5f5;
-
-  --color-gray: var(--color-gray-500);
-  --color-primary: var(--color-primary-500);
-  --color-secondary: var(--color-secondary-500);
-  --color-tertiary: var(--color-tertiary-500);
-  --color-alcohol: var(--color-alcohol-500);
-=======
-  /* هماهنگ شده با رنگ نیلی اصلی (Muted Slate / Cool Grays) */
-=======
   /* Grays */
->>>>>>> de435e5 (color system)
   --color-gray-900: #0f172a;
   --color-gray-800: #1e293b;
   --color-gray-700: #334155;
   --color-gray-600: #475569;
-  --color-gray-500: #64748b;
-  --color-gray-400: #94a3b8;
-  --color-gray-300: #cbd5e1;
-  --color-gray-200: #e2e8f0;
-  --color-gray-100: #f1f5f9;
   --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9; /* Divider تصویر */
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b; /* متن فرعی تصویر */
 
   /* Primary - Indigo */
-  --color-primary-900: #1e1b4b;
-  --color-primary-800: #312e81;
-  --color-primary-700: #3730a3;
-  --color-primary-600: #4338ca;
-  --color-primary-500: #4f46e5;
-  --color-primary-400: #6366f1;
-  --color-primary-300: #818cf8;
+  --color-primary-50: #f7f7ff; /* Hero Section تصویر */
+  --color-primary-100: #e4e4f7; /* Border تصویر */
   --color-primary-200: #a5b4fc;
-  --color-primary-100: #e4e4f7;
-  --color-primary-50: #f7f7ff;
+  --color-primary-300: #818cf8;
+  --color-primary-400: #6366f1;
+  --color-primary-500: #4f46e5; /* CTA اصلی و لینک‌های تصویر */
+  --color-primary-600: #4338ca;
+  --color-primary-700: #3730a3;
+  --color-primary-800: #312e81;
+  --color-primary-900: #1e1b4b; /* متن اصلی تصویر */
 
   /* Secondary */
-  --color-secondary-900: #78350f;
-  --color-secondary-800: #92400e;
-  --color-secondary-700: #b45309;
-  --color-secondary-600: #d97706;
-  --color-secondary-500: #fec94d;
-  --color-secondary-400: #fbbf24;
-  --color-secondary-300: #fcd34d;
-  --color-secondary-200: #fde68a;
-  --color-secondary-100: #fef3c7;
   --color-secondary-50: #fffbeb;
+  --color-secondary-100: #fef3c7;
+  --color-secondary-200: #fde68a;
+  --color-secondary-300: #fcd34d;
+  --color-secondary-400: #fbbf24;
+  --color-secondary-500: #fec94d; /* Badge VIP تصویر */
+  --color-secondary-600: #d97706;
+  --color-secondary-700: #b45309;
+  --color-secondary-800: #92400e;
+  --color-secondary-900: #78350f;
 
   /* System Colors */
-  --color-success-500: #22c55e;
-  --color-warning-500: #f59e0b;
-  --color-error-500: #ef4444;
+  --color-success-500: #22c55e; /* Success تصویر */
+  --color-warning-500: #f59e0b; /* Warning تصویر */
+  --color-error-500: #ef4444; /* Error تصویر */
 
   /* Shortcuts */
   --color-gray: var(--color-gray-500);
   --color-primary: var(--color-primary-500);
   --color-secondary: var(--color-secondary-500);
->>>>>>> 93e52a1 (color system)
   --color-success: var(--color-success-500);
   --color-warning: var(--color-warning-500);
   --color-error: var(--color-error-500);
