@@ -3,6 +3,7 @@
 
   --color-white: #ffffff;
 
+
   --color-gray-900: #0f1411;
   --color-gray-800: #1e2520;
   --color-gray-700: #3a453f;
@@ -96,6 +97,84 @@
   --color-secondary: var(--color-secondary-500);
   --color-tertiary: var(--color-tertiary-500);
   --color-alcohol: var(--color-alcohol-500);
+=======
+  /* هماهنگ شده با رنگ نیلی اصلی (Muted Slate / Cool Grays) */
+  --color-gray-900: #0f172a;
+  --color-gray-800: #1e293b;
+  --color-gray-700: #334155;
+  --color-gray-600: #475569;
+  --color-gray-500: #64748b; /* متن فرعی تصویر */
+  --color-gray-400: #94a3b8;
+  --color-gray-300: #cbd5e1;
+  --color-gray-200: #e2e8f0;
+  --color-gray-100: #f1f5f9; /* Divider تصویر */
+  --color-gray-50: #f8fafc;
+
+  /* رنگ پرایمری (پالت Indigo تصویر) */
+  --color-primary-900: #1e1b4b; /* متن اصلی تصویر */
+  --color-primary-800: #312e81;
+  --color-primary-700: #3730a3;
+  --color-primary-600: #4338ca;
+  --color-primary-500: #4f46e5; /* CTA اصلی و لینک‌های تصویر */
+  --color-primary-400: #6366f1;
+  --color-primary-300: #818cf8;
+  --color-primary-200: #a5b4fc;
+  --color-primary-100: #e4e4f7; /* Border تصویر */
+  --color-primary-50: #f7f7ff; /* Hero Section تصویر */
+
+  /* رنگ سکندری / تاکیدی ویژه (پالت Badge VIP تصویر) */
+  --color-secondary-900: #78350f;
+  --color-secondary-800: #92400e;
+  --color-secondary-700: #b45309;
+  --color-secondary-600: #d97706;
+  --color-secondary-500: #fec94d; /* Badge VIP تصویر */
+  --color-secondary-400: #fbbf24;
+  --color-secondary-300: #fcd34d;
+  --color-secondary-200: #fde68a;
+  --color-secondary-100: #fef3c7;
+  --color-secondary-50: #fffbeb;
+
+  /* رنگ ساکسس (پیام‌های موفقیت تصویر) */
+  --color-success-900: #064e3b;
+  --color-success-800: #065f46;
+  --color-success-700: #047857;
+  --color-success-600: #059669;
+  --color-success-500: #22c55e; /* Success تصویر */
+  --color-success-400: #4ade80;
+  --color-success-300: #86efac;
+  --color-success-200: #bbf7d0;
+  --color-success-100: #dcfce7;
+  --color-success-50: #f0fdf4;
+
+  /* رنگ وارنینگ (پیام‌های هشدار تصویر) */
+  --color-warning-900: #7c2d12;
+  --color-warning-800: #9a3412;
+  --color-warning-700: #c2410c;
+  --color-warning-600: #ea580c;
+  --color-warning-500: #f59e0b; /* Warning تصویر */
+  --color-warning-400: #fb923c;
+  --color-warning-300: #fdba74;
+  --color-warning-200: #fed7aa;
+  --color-warning-100: #ffedd5;
+  --color-warning-50: #fff7ed;
+
+  /* رنگ ارور (پیام‌های خطا تصویر) */
+  --color-error-900: #7f1d1d;
+  --color-error-800: #991b1b;
+  --color-error-700: #b91c1c;
+  --color-error-600: #dc2626;
+  --color-error-500: #ef4444; /* Error تصویر */
+  --color-error-400: #f87171;
+  --color-error-300: #fca5a5;
+  --color-error-200: #fecaca;
+  --color-error-100: #fee2e2;
+  --color-error-50: #fef2f2;
+
+  /* میانبرهای رنگی پیش‌فرض */
+  --color-gray: var(--color-gray-500);
+  --color-primary: var(--color-primary-500);
+  --color-secondary: var(--color-secondary-500);
+>>>>>>> 93e52a1 (color system)
   --color-success: var(--color-success-500);
   --color-warning: var(--color-warning-500);
   --color-error: var(--color-error-500);
