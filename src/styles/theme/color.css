@@ -3,20 +3,18 @@
 
   --color-white: #ffffff;
 
-  /* هماهنگ شده با رنگ نیلی/بنفش مدرن (Muted Cool Grays) */
   --color-gray-900: #0f172a;
   --color-gray-800: #1e293b;
   --color-gray-700: #334155;
   --color-gray-600: #475569;
-  --color-gray-500: #64748b; /* متن فرعی تصویر */
+  --color-gray-500: #64748b;
   --color-gray-400: #94a3b8;
   --color-gray-300: #cbd5e1;
   --color-gray-200: #e2e8f0;
-  --color-gray-100: #f1f5f9; /* Divider تصویر */
+  --color-gray-100: #f1f5f9;
   --color-gray-50: #f8fafc;
 
-  /* رنگ پرایمری (پالت Indigo نیلی مدرن تصویر) */
-  --color-primary-900: #1e1b4b; /* متن اصلی تصویر */
+  --color-primary-900: #1e1b4b;
   --color-primary-800: #312e81;
   --color-primary-700: #3730a3;
   --color-primary-600: #4338ca;
@@ -25,9 +23,8 @@
   --color-primary-300: #818cf8;
   --color-primary-200: #a5b4fc;
   --color-primary-100: #e4e4f7;
-  --color-primary-50: #f7f7ff; /* Hero Section تصویر */
+  --color-primary-50: #f7f7ff;
 
-  /* رنگ سکندری (رنگ مکمل طلایی/زرد برای Badge VIP تصویر) */
   --color-secondary-900: #78350f;
   --color-secondary-800: #92400e;
   --color-secondary-700: #b45309;
@@ -39,7 +36,6 @@
   --color-secondary-100: #fef3c7;
   --color-secondary-50: #fffbeb;
 
-  /* رنگ ساکسس (سبز استاندارد تصویر) */
   --color-success-900: #052e16;
   --color-success-800: #14532d;
   --color-success-700: #15803d;
@@ -51,7 +47,6 @@
   --color-success-100: #dcfce7;
   --color-success-50: #f0fdf4;
 
-  /* رنگ وارنینگ (نارنجی استاندارد تصویر) */
   --color-warning-900: #7c2d12;
   --color-warning-800: #9a3412;
   --color-warning-700: #c2410c;
@@ -63,7 +58,7 @@
   --color-warning-100: #ffedd5;
   --color-warning-50: #fff7ed;
 
-  /* رنگ ارور (قرمز استاندارد تصویر) */
+  /* color error */
   --color-error-900: #7f1d1d;
   --color-error-800: #991b1b;
   --color-error-700: #b91c1c;
