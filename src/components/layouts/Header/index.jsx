@@ -9,16 +9,17 @@ function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   const navItems = [
-    { id: 1, label: 'صفحه اصلی', href: '#' },
-    { id: 2, label: 'دوره ها', href: '#' },
+    { id: 1, label: 'خانه', href: '/' },
+    { id: 2, label: 'دوره های آموزشی', href: '#' },
     { id: 3, label: 'دوره های حضوری', href: '#' },
-    { id: 4, label: 'درباره ما', href: '#' },
-    { id: 5, label: 'ارتباط با ما', href: '#' },
+    { id: 4, label: 'درباره کد کدا', href: '/about' },
+    { id: 5, label: 'تماس با ما', href: '#' },
+    { id: 6, label: 'مقالات', href: '#' },
   ];
 
   return (
     <>
-      <header className="absolute inset-0 z-50 w-full py-20 lg:py-27">
+      <header className="bg-transparent py-20 lg:py-27">
         <div className="container">
           <nav className="flex items-center justify-between lg:justify-start">
             <Logo />
@@ -40,7 +41,7 @@ function Header() {
 
             <a
               href="#"
-              className="bg-primary-500 hover:bg-primary-600 hidden rounded-[5px] px-25 py-10 text-gray-900 transition hover:text-white lg:inline-block"
+              className="bg-primary-500 hover:bg-primary-600 hidden rounded-[5px] px-25 py-10 text-white transition lg:inline-block"
             >
               ورود و ثبت نام
             </a>
@@ -129,7 +130,7 @@ function Header() {
           <div className="my-4 h-px bg-gray-200"></div>
           <a
             href="#"
-            className="bg-primary-500 hover:bg-primary-600 rounded-[5px] px-25 py-10 text-center text-gray-900 transition hover:text-white"
+            className="bg-primary-500 hover:bg-primary-600 rounded-[5px] px-25 py-10 text-center text-white transition"
           >
             ورود و ثبت نام
           </a>

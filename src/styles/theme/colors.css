@@ -3,41 +3,81 @@
 
   --color-white: #ffffff;
 
-  --color-gray-900: #0f172a;
-  --color-gray-800: #1e293b;
-  --color-gray-700: #334155;
-  --color-gray-600: #475569;
-  --color-gray-500: #64748b;
-  --color-gray-400: #94a3b8;
-  --color-gray-300: #cbd5e1;
-  --color-gray-200: #e2e8f0;
-  --color-gray-100: #f1f5f9;
-  --color-gray-50: #f8fafc;
+  /* Gray */
+  --color-gray-900: #111827;
+  --color-gray-800: #1f2937;
+  --color-gray-700: #374151;
+  --color-gray-600: #4b5563;
+  --color-gray-500: #6b7280;
+  --color-gray-400: #9ca3af;
+  --color-gray-300: #d1d5db;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #f9fafb;
 
+  /* Primary - Indigo */
   --color-primary-900: #1e1b4b;
   --color-primary-800: #312e81;
-  --color-primary-700: #3730a3;
-  --color-primary-600: #4338ca;
-  --color-primary-500: #4f46e5;
-  --color-primary-400: #6366f1;
-  --color-primary-300: #818cf8;
-  --color-primary-200: #a5b4fc;
-  --color-primary-100: #e4e4f7;
-  --color-primary-50: #f7f7ff;
+  --color-primary-700: #4338ca;
+  --color-primary-600: #4f46e5;
+  --color-primary-500: #6366f1;
+  --color-primary-400: #818cf8;
+  --color-primary-300: #a5b4fc;
+  --color-primary-200: #c7d2fe;
+  --color-primary-100: #e0e7ff;
+  --color-primary-50: #eef2ff;
 
-  --color-secondary-900: #78350f;
-  --color-secondary-800: #92400e;
-  --color-secondary-700: #b45309;
-  --color-secondary-600: #d97706;
-  --color-secondary-500: #fec94d;
-  --color-secondary-400: #fbbf24;
-  --color-secondary-300: #fcd34d;
-  --color-secondary-200: #fde68a;
-  --color-secondary-100: #fef3c7;
-  --color-secondary-50: #fffbeb;
+  /* Secondary - Yellow */
+  --color-secondary-900: #6b4f00;
+  --color-secondary-800: #8c6908;
+  --color-secondary-700: #b38615;
+  --color-secondary-600: #d9aa2e;
+  --color-secondary-500: #f3c94d;
+  --color-secondary-400: #f6d66f;
+  --color-secondary-300: #f8e092;
+  --color-secondary-200: #fbecba;
+  --color-secondary-100: #fdf6dc;
+  --color-secondary-50: #fffcf3;
 
-  --color-success-900: #052e16;
-  --color-success-800: #14532d;
+  /* Tertiary - Sky */
+  --color-tertiary-900: #082f49;
+  --color-tertiary-800: #0c4a6e;
+  --color-tertiary-700: #0369a1;
+  --color-tertiary-600: #0284c7;
+  --color-tertiary-500: #0ea5e9;
+  --color-tertiary-400: #38bdf8;
+  --color-tertiary-300: #7dd3fc;
+  --color-tertiary-200: #bae6fd;
+  --color-tertiary-100: #e0f2fe;
+  --color-tertiary-50: #f0f9ff;
+
+  /* Alcohol */
+  --color-alcohol-900: #4a044e;
+  --color-alcohol-800: #701a75;
+  --color-alcohol-700: #86198f;
+  --color-alcohol-600: #a21caf;
+  --color-alcohol-500: #c026d3;
+  --color-alcohol-400: #d946ef;
+  --color-alcohol-300: #e879f9;
+  --color-alcohol-200: #f5d0fe;
+  --color-alcohol-100: #fae8ff;
+  --color-alcohol-50: #fdf4ff;
+
+  /* Warning */
+  --color-warning-900: #78350f;
+  --color-warning-800: #92400e;
+  --color-warning-700: #b45309;
+  --color-warning-600: #d97706;
+  --color-warning-500: #f59e0b;
+  --color-warning-400: #fbbf24;
+  --color-warning-300: #fcd34d;
+  --color-warning-200: #fde68a;
+  --color-warning-100: #fef3c7;
+  --color-warning-50: #fffbeb;
+
+  /* Success */
+  --color-success-900: #14532d;
+  --color-success-800: #166534;
   --color-success-700: #15803d;
   --color-success-600: #16a34a;
   --color-success-500: #22c55e;
@@ -47,17 +87,7 @@
   --color-success-100: #dcfce7;
   --color-success-50: #f0fdf4;
 
-  --color-warning-900: #7c2d12;
-  --color-warning-800: #9a3412;
-  --color-warning-700: #c2410c;
-  --color-warning-600: #ea580c;
-  --color-warning-500: #f59e0b;
-  --color-warning-400: #fb923c;
-  --color-warning-300: #fdba74;
-  --color-warning-200: #fed7aa;
-  --color-warning-100: #ffedd5;
-  --color-warning-50: #fff7ed;
-
+  /* Error */
   --color-error-900: #7f1d1d;
   --color-error-800: #991b1b;
   --color-error-700: #b91c1c;
@@ -70,7 +100,7 @@
   --color-error-50: #fef2f2;
 
   --color-gray: var(--color-gray-500);
-  --color-primary: var(--color-primary-500);
+  --color-primary: var(--color-primary-600);
   --color-secondary: var(--color-secondary-500);
   --color-success: var(--color-success-500);
   --color-warning: var(--color-warning-500);

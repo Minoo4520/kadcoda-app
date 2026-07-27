@@ -1,6 +1,10 @@
+import Footer from '../../components/layouts/Footer/Index';
 import Header from '../../components/layouts/Header';
+import Articles from './Articles';
 import HeroSection from './HeroSection';
-import Testimonial from './Testimonial';
+import LastCourses from './LastCourses';
+import LearningTypes from './LearningTypes';
+import OfflineCourses from './OfflineCourses';
 
 function HomePage() {
   return (
@@ -8,7 +12,15 @@ function HomePage() {
       <Header />
       <HeroSection />
 
-      <Testimonial />
+      <LastCourses />
+
+      <LearningTypes />
+
+      <OfflineCourses />
+
+      <Articles />
+
+      <Footer />
     </>
   );
 }

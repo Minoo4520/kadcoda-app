@@ -1,17 +1,15 @@
 function HeroSection() {
   return (
-    <section className="bg-primary-50 flex min-h-screen items-center justify-center pt-32">
+    <section className="flex min-h-screen items-center justify-center pt-32">
       <div className="container">
-        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-20">
-          <div className="flex-1 text-center lg:text-right">
-            <h1 className="text-4xl leading-60 font-bold text-gray-900 md:text-4xl lg:text-5xl">
-              هر آنچه که در راه رسیدن به
-              <br />
-              شغل ایده آل نیاز دارید
+        <div className="grid grid-cols-12 items-center gap-12 lg:gap-40">
+          <div className="col-span-7 text-center lg:text-right">
+            <h1 className="text-primary-900 lg:text-48 text-4xl leading-60 font-bold md:text-4xl">
+              آکادمی آموزش برنامه نویسی و هوش مصنوعی <br />
             </h1>
 
-            <h3 className="mt-25 text-lg text-gray-600">
-              تخصصی ترین آموزش ها در ایران با مجوز رسمی
+            <h3 className="text-16 mt-25 text-gray-600">
+              اینجا نقطه شروع سفر حرفه ای تو به دنیانی هوش مصنوعیه
             </h3>
 
             <div className="bg-primary-500/10 border-primary-500/22 shadow-primary-500/10 relative mt-25 rounded-2xl border p-30 shadow-lg backdrop-blur-[28px]">
@@ -74,95 +72,8 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="relative flex flex-1 justify-center lg:justify-end">
-            <div className="relative h-80 w-80 md:h-[420px] md:w-[420px] lg:h-[550px] lg:w-[550px]">
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 650 650"
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute inset-0"
-              >
-                <defs>
-                  <linearGradient
-                    id="circleGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" stopColor="#2adf69" />
-                    <stop offset="100%" stopColor="#57e687" />
-                  </linearGradient>
-                </defs>
-
-                <circle
-                  cx="325"
-                  cy="325"
-                  r="280"
-                  fill="url(#circleGradient)"
-                  stroke="#82eca5"
-                  strokeWidth="6"
-                  opacity="0.9"
-                />
-
-                <circle
-                  cx="325"
-                  cy="325"
-                  r="190"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.4)"
-                  strokeWidth="4"
-                  strokeDasharray="16 16"
-                />
-
-                <circle cx="325" cy="325" r="60" fill="white" opacity="0.8" />
-
-                <circle cx="325" cy="55" r="12" fill="white" opacity="0.6" />
-                <circle cx="595" cy="325" r="12" fill="white" opacity="0.6" />
-                <circle cx="325" cy="595" r="12" fill="white" opacity="0.6" />
-                <circle cx="55" cy="325" r="12" fill="white" opacity="0.6" />
-
-                <circle cx="500" cy="150" r="7" fill="white" opacity="0.4" />
-                <circle cx="150" cy="500" r="7" fill="white" opacity="0.4" />
-                <circle cx="500" cy="500" r="7" fill="white" opacity="0.4" />
-                <circle cx="150" cy="150" r="7" fill="white" opacity="0.4" />
-
-                <circle cx="325" cy="150" r="5" fill="white" opacity="0.3" />
-                <circle cx="500" cy="325" r="5" fill="white" opacity="0.3" />
-                <circle cx="325" cy="500" r="5" fill="white" opacity="0.3" />
-                <circle cx="150" cy="325" r="5" fill="white" opacity="0.3" />
-
-                <circle cx="420" cy="80" r="4" fill="white" opacity="0.25" />
-                <circle cx="570" cy="420" r="4" fill="white" opacity="0.25" />
-                <circle cx="230" cy="570" r="4" fill="white" opacity="0.25" />
-                <circle cx="80" cy="230" r="4" fill="white" opacity="0.25" />
-              </svg>
-
-              <img
-                src="/images/avatar.png"
-                className="absolute top-1/2 left-1/2 max-h-[60%] max-w-[60%] -translate-x-1/2 -translate-y-1/2 object-contain grayscale-100"
-                alt="avatar"
-              />
-
-              <img
-                src="/images/coding.png"
-                className="absolute top-40 left-30 max-h-[18%] max-w-[18%] object-contain"
-                alt="coding"
-              />
-
-              <img
-                src="/images/html.png"
-                className="absolute bottom-80 left-10 max-h-[18%] max-w-[18%] object-contain"
-                alt="html"
-              />
-
-              <img
-                src="/images/rocket.png"
-                className="absolute top-1/2 right-0 max-h-[30%] max-w-[30%] -translate-y-1/2 object-contain"
-                alt="rocket"
-              />
-            </div>
+          <div className="relative col-span-5 flex justify-center lg:justify-end">
+            <img src="/images/hero.jpg" alt="hero" />
           </div>
         </div>
       </div>
