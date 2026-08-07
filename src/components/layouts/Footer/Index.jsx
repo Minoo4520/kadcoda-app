@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="col-span-2">
               <Logo />
 
-              <p className="mt-10 leading-30 text-white/70">
+              <p className="mt-10 text-sm leading-30 text-white/70">
                 آموزش برنامه نویسی به صورت حضوری و آنلاین با پروژه‌های واقعی و
                 پشتیبانی دائمی. هدف ما تربیت برنامه‌نویس آماده ورود به بازار کار
                 است.
@@ -80,22 +80,30 @@ export default function Footer() {
 
               <ul className="space-y-14">
                 <li>
-                  <Link to="/" className="hover:text-primary-500" href="#">
+                  <Link
+                    to="/"
+                    className="hover:text-primary-500 text-sm"
+                    href="#"
+                  >
                     خانه
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-primary-500 text-sm" href="/archive">
                     دوره‌ها
                   </a>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:text-primary-500" href="#">
+                  <Link
+                    to="/about"
+                    className="hover:text-primary-500 text-sm"
+                    href="/about"
+                  >
                     درباره ما
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-primary-500 text-sm" href="#">
                     اساتید
                   </a>
                 </li>
@@ -155,7 +163,7 @@ export default function Footer() {
                       />
                     </svg>
 
-                    <span>2867 123 0912</span>
+                    <span className="text-sm">2867 123 0912</span>
                   </li>
 
                   <li className="flex items-center gap-10">
@@ -176,7 +184,7 @@ export default function Footer() {
                       />
                     </svg>
 
-                    <span>info@example.com</span>
+                    <span className="text-sm">info@example.com</span>
                   </li>
 
                   <li className="flex items-center gap-10">
@@ -197,7 +205,9 @@ export default function Footer() {
                       <circle cx="12" cy="10" r="2.5" />
                     </svg>
 
-                    <span>قزوین، باراجین، پارک علم و فناوری</span>
+                    <span className="text-sm">
+                      قزوین، باراجین، پارک علم و فناوری
+                    </span>
                   </li>
                 </ul>
               </ul>

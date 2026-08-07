@@ -20,28 +20,80 @@ function ListItem({ children, color }) {
 
 export default function AboutContent() {
   return (
-    <section className="py-24">
+    <section className="pt-45 pb-96">
       <div className="container-layout">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="relative mx-auto max-w-3xl text-center">
           <span className="text-primary text-lg font-bold">درباره کدکدا</span>
 
-          <h2 className="my-8 text-4xl font-black">
+          <h2 className="my-32 text-4xl font-black">
             اولین قدم برای تبدیل شدن به یک برنامه‌نویس حرفه‌ای
           </h2>
 
-          <p className="mt-8 leading-25 text-gray-600">
+          <p className="mt-32 leading-25 text-gray-600">
             کدکدا یک پلتفرم آموزشی تخصصی در حوزه برنامه‌نویسی است که با تمرکز بر
             آموزش‌های پروژه‌محور، محتوای به‌روز و پشتیبانی حرفه‌ای، مسیر یادگیری
             را برای همه ساده‌تر کرده است. هدف ما تنها آموزش نیست؛ بلکه
             آماده‌سازی شما برای ورود به بازار کار و ساختن آینده‌ای حرفه‌ای است.
           </p>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 600 180"
+            fill="none"
+            className="text-primary-200 o absolute -top-5 -left-120 size-95 rotate-180"
+          >
+            <path
+              d="M0 80 C75 40, 150 120, 225 80 S300 40, 375 80 S450 120, 525 80 S600 40, 600 80"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+            <path
+              d="M0 110 C75 70, 150 150, 225 110 S300 70, 375 110 S450 150, 525 110 S600 70, 600 110"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+            <path
+              d="M0 140 C75 100, 150 180, 225 140 S300 100, 375 140 S450 180, 525 140 S600 100, 600 140"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 600 180"
+            fill="none"
+            className="text-primary-200 o absolute top-50 -right-120 size-95 rotate-180"
+          >
+            <path
+              d="M0 80 C75 40, 150 120, 225 80 S300 40, 375 80 S450 120, 525 80 S600 40, 600 80"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+            <path
+              d="M0 110 C75 70, 150 150, 225 110 S300 70, 375 110 S450 150, 525 110 S600 70, 600 110"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+            <path
+              d="M0 140 C75 100, 150 180, 225 140 S300 100, 375 140 S450 180, 525 140 S600 100, 600 140"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </svg>
         </div>
 
-        <div className="mt-20 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl bg-white p-20 shadow-lg">
-            <h3 className="text-2xl font-extrabold">مأموریت ما</h3>
+        <div className="mt-40 grid gap-8 lg:grid-cols-2">
+          <div className="rounded-3xl bg-white p-32 shadow-lg">
+            <h3 className="mb-16 text-2xl font-extrabold">مأموریت ما</h3>
 
-            <ul className="mt-8 space-y-9">
+            <ul className="mt-8 space-y-24">
               <ListItem color="text-primary-900">
                 آموزش پروژه‌محور و کاربردی
               </ListItem>
@@ -57,10 +109,10 @@ export default function AboutContent() {
             </ul>
           </div>
 
-          <div className="bg-primary shadow-primary-600/40 rounded-3xl p-20 text-white shadow-lg shadow-xl">
-            <h3 className="text-2xl font-extrabold">چرا کدکدا؟</h3>
+          <div className="bg-primary shadow-primary-600/40 rounded-3xl p-32 text-white shadow-xl">
+            <h3 className="mb-16 text-2xl font-extrabold">چرا کدکدا؟</h3>
 
-            <ul className="mt-8 space-y-9">
+            <ul className="mt-8 space-y-24">
               <ListItem color="text-white">دوره‌های جامع و به‌روز</ListItem>
               <ListItem color="text-white">
                 اساتید باتجربه و فعال در صنعت

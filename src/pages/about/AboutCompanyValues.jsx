@@ -2,7 +2,7 @@ import OurValuesBox from './ValueBox';
 
 function AboutCompanyValues() {
   return (
-    <section className="dark:bg-dark-3 mt-4 py-6 pt-4">
+    <section className="dark:bg-dark-3 py-96">
       <div className="mb-40 text-center">
         <h2 className="text-primary text-2xl font-black">ارزش های کد کدا </h2>
 
@@ -12,7 +12,7 @@ function AboutCompanyValues() {
       </div>
 
       <div className="container-layout">
-        <div className="my-5 grid grid-cols-1 gap-10 md:grid-cols-2">
+        <div className="my-5 grid grid-cols-1 gap-24 md:grid-cols-2">
           {/* <!-- our values box --> */}
           <OurValuesBox
             icon={

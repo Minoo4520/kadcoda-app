@@ -1,6 +1,6 @@
 function OurValuesBox({ icon, title, caption }) {
   return (
-    <div className="relative overflow-hidden rounded-3xl bg-white p-20 shadow-[0_10px_35px_rgba(0,0,0,.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(0,0,0,.12)]">
+    <div className="relative overflow-hidden rounded-3xl bg-white p-24 shadow-[0_10px_35px_rgba(0,0,0,.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(0,0,0,.12)]">
       <svg
         className="text-primary/60 absolute top-5 left-5 h-56 w-56"
         viewBox="0 0 70 70"

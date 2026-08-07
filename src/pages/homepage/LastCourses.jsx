@@ -80,7 +80,7 @@ const courses = [
 
 export default function LastCourses() {
   return (
-    <section className="py-45">
+    <section className="py-96">
       <div className="container">
         <div className="mb-30">
           <h2 className="text-3xl font-black text-gray-900">آخرین دوره‌ها</h2>

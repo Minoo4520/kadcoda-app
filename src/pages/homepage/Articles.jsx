@@ -32,7 +32,7 @@ const articles = [
 
 export default function Articles() {
   return (
-    <section className="py-40">
+    <section className="py-96">
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-40 text-center">
