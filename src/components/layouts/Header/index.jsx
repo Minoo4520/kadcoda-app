@@ -10,8 +10,8 @@ function Header() {
 
   const navItems = [
     { id: 1, label: 'خانه', href: '/' },
-    { id: 2, label: 'دوره های آموزشی', href: '#' },
-    { id: 3, label: 'دوره های حضوری', href: '#' },
+    { id: 2, label: 'دوره های آموزشی', href: '/archive' },
+    { id: 3, label: 'دوره های حضوری', href: '/archive-online' },
     { id: 4, label: 'درباره کد کدا', href: '/about' },
     { id: 5, label: 'تماس با ما', href: '#' },
     { id: 6, label: 'مقالات', href: '#' },

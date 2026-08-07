@@ -4,7 +4,7 @@ import NeshanMap from './NeshanMap';
 
 function AboutCommunicationLinks() {
   return (
-    <section className="mt-40 pb-12">
+    <section className="py-96">
       <div className="container-layout">
         <div className="grid grid-cols-1 items-center gap-3 lg:grid-cols-2">
           <div>
