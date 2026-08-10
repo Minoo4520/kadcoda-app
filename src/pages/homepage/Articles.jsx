@@ -32,7 +32,7 @@ const articles = [
 
 export default function Articles() {
   return (
-    <section className="py-96">
+    <section className="py-56 md:py-72 lg:py-96">
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-40 text-center">
@@ -43,7 +43,7 @@ export default function Articles() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-28 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-28 md:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
             <Article key={article.id} article={article} />
           ))}

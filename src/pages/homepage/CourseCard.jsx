@@ -23,14 +23,14 @@ export default function CourseCard({ course, isPresential = false }) {
             <div className="flex items-center gap-2 text-gray-600">
               {isPresential ? (
                 <>
-                  <div className="bg-primary-200/30 flex items-center gap-4 rounded-lg px-9 py-3 font-bold">
+                  <div className="bg-secondary-300/30 flex items-center gap-4 rounded-lg px-9 py-3 font-bold">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
-                      className="text-primary-500 size-14"
+                      className="text-secondary-500 size-14"
                     >
                       <circle cx="12" cy="12" r="9" />
                       <path
@@ -39,18 +39,18 @@ export default function CourseCard({ course, isPresential = false }) {
                         d="M12 7v5l3 2"
                       />
                     </svg>
-                    <span className="text-primary-500 text-xs">حضوری</span>
+                    <span className="text-secondary-600 text-xs">حضوری</span>
                   </div>
                 </>
               ) : (
-                <div className="bg-primary-200/30 flex items-center gap-4 rounded-lg px-9 py-3 font-bold">
+                <div className="bg-secondary-200/30 flex items-center gap-4 rounded-lg px-9 py-3 font-bold">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
-                    className="text-primary-500 size-14"
+                    className="text-secondary-500 size-14"
                   >
                     <circle cx="12" cy="12" r="9" />
                     <path
@@ -60,7 +60,7 @@ export default function CourseCard({ course, isPresential = false }) {
                     />
                   </svg>
 
-                  <span className="text-primary-500 text-xs">
+                  <span className="text-secondary-600 text-xs">
                     {course.hours} ساعت
                   </span>
                 </div>

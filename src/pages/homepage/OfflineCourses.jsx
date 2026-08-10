@@ -41,7 +41,7 @@ const courses = [
 
 export default function OfflineCourses() {
   return (
-    <section className="py-96">
+    <section className="py-56 md:py-72 lg:py-96">
       <div className="container">
         <div className="mb-30">
           <h2 className="text-3xl font-black text-gray-900">دوره های حضوری</h2>

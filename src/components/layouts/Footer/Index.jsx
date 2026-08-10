@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-40 lg:grid-cols-6">
             {/* About */}
             <div className="col-span-2">
-              <Logo />
+              <Logo secondary={true} />
 
               <p className="mt-10 text-sm leading-30 text-white/70">
                 آموزش برنامه نویسی به صورت حضوری و آنلاین با پروژه‌های واقعی و
@@ -74,7 +74,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-primary mb-18 text-lg font-bold">
+              <h4 className="text-primary-50 mb-18 text-lg font-bold">
                 دسترسی سریع
               </h4>
 
@@ -82,28 +82,31 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/"
-                    className="hover:text-primary-500 text-sm"
+                    className="hover:text-secondary-300 text-sm"
                     href="#"
                   >
                     خانه
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500 text-sm" href="/archive">
+                  <a
+                    className="hover:text-secondary-300 text-sm"
+                    href="/archive"
+                  >
                     دوره‌ها
                   </a>
                 </li>
                 <li>
                   <Link
                     to="/about"
-                    className="hover:text-primary-500 text-sm"
+                    className="hover:text-secondary-300 text-sm"
                     href="/about"
                   >
                     درباره ما
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500 text-sm" href="#">
+                  <a className="hover:text-secondary-300 text-sm" href="#">
                     اساتید
                   </a>
                 </li>
@@ -112,26 +115,28 @@ export default function Footer() {
 
             {/* Courses */}
             <div>
-              <h4 className="text-primary mb-18 text-lg font-bold">دوره‌ها</h4>
+              <h4 className="text-primary-50 mb-18 text-lg font-bold">
+                دوره‌ها
+              </h4>
 
               <ul className="space-y-14">
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     React
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     Next.js
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     Node.js
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     Tailwind CSS
                   </a>
                 </li>
@@ -140,7 +145,7 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="col-span-2">
-              <h4 className="text-primary mb-18 text-lg font-bold">
+              <h4 className="text-primary-50 mb-18 text-lg font-bold">
                 ارتباط با ما
               </h4>
 

@@ -1,6 +1,6 @@
 export default function LearningTypes() {
   return (
-    <section className="py-96">
+    <section className="py-56 md:py-72 lg:py-96">
       <div className="container mx-auto">
         {/* Title */}
         <div className="mb-40 text-center">
@@ -16,7 +16,7 @@ export default function LearningTypes() {
         {/* Cards */}
         <div className="grid grid-cols-1 gap-20 lg:grid-cols-3">
           {/* Online */}
-          <div className="rounded-24 bg-primary-400/10 relative flex cursor-pointer items-center gap-24 overflow-hidden rounded-lg p-24 transition duration-300 hover:-translate-y-2">
+          <div className="rounded-24 bg-primary-50 relative flex cursor-pointer items-center gap-24 overflow-hidden rounded-lg p-24 transition duration-300 hover:-translate-y-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 320"
@@ -103,7 +103,7 @@ export default function LearningTypes() {
               />
             </svg>
 
-            <div className="text-primary">
+            <div className="text-secondary-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -124,7 +124,7 @@ export default function LearningTypes() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 320"
               fill="none"
-              className="text-primary-50 absolute -top-5 -left-10 size-70 rotate-180"
+              className="text-secondary-300 absolute -top-5 -left-10 size-70 rotate-180"
             >
               <path
                 d="M320 20C170 20 50 140 50 320"
@@ -149,7 +149,9 @@ export default function LearningTypes() {
             </svg>
 
             <div>
-              <h3 className="text-primary text-lg font-bold">دوره‌های حضوری</h3>
+              <h3 className="text-secondary-300 text-lg font-bold">
+                دوره‌های حضوری
+              </h3>
 
               <p className="text-md text-alcohol-50 mt-6 leading-24">
                 آموزش حضوری همراه با تمرین و رفع اشکال.
@@ -158,7 +160,7 @@ export default function LearningTypes() {
           </div>
 
           {/* Hybrid */}
-          <div className="rounded-24 bg-primary-400/10 relative flex cursor-pointer items-center gap-24 overflow-hidden rounded-lg p-24 transition duration-300 hover:-translate-y-2">
+          <div className="rounded-24 bg-primary-50 relative flex cursor-pointer items-center gap-24 overflow-hidden rounded-lg p-24 transition duration-300 hover:-translate-y-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 320"
