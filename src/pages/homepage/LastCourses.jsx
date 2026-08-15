@@ -90,10 +90,16 @@ export default function LastCourses() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-32 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-32 sm:grid-cols-2 lg:grid-cols-4">
           {courses.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}
+        </div>
+
+        <div className="mt-32 flex w-full items-center justify-center">
+          <button className="shadow-primary-900/30 hover:bg-primary-900 hover:text-primary-50 cursor-pointer rounded-md px-10 py-12 text-sm shadow-xs transition duration-300">
+            مشاهده همه دوره ها
+          </button>
         </div>
       </div>
     </section>

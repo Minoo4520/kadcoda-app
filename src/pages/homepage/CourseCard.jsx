@@ -72,7 +72,7 @@ export default function CourseCard({ course, isPresential = false }) {
           <div className="relative py-4">
             <div className="via-primary-400/20 absolute bottom-0 left-1/2 h-2.5 w-3/4 -translate-x-1/2 transform bg-gradient-to-r from-transparent to-transparent"></div>
           </div>
-          <button className="bg-primary-600 group-hover:shadow-primary-600/40 text-primary-50 text-md my-12 w-full cursor-pointer rounded-xl py-8 text-center font-semibold transition duration-300 group-hover:shadow-md">
+          <button className="bg-primary-600 group-hover:shadow-primary-600/40 group-hover:text-secondary-300 text-primary-50 text-md my-12 w-full cursor-pointer rounded-xl py-8 text-center font-semibold transition duration-300 group-hover:shadow-md">
             مشاهده دوره
           </button>
         </div>

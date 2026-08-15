@@ -14,7 +14,7 @@ export default function LearningTypes() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 gap-20 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-48 md:gap-20 lg:grid-cols-3">
           {/* Online */}
           <div className="rounded-24 bg-primary-50 relative flex cursor-pointer items-center gap-24 overflow-hidden rounded-lg p-24 transition duration-300 hover:-translate-y-2">
             <svg

@@ -6,7 +6,7 @@ export default function Article({ article }) {
       to={`/blog/${article.slug}`}
       className="group hover:bg-primary-50 relative block overflow-visible rounded-xl rounded-t-3xl bg-white shadow-lg shadow-gray-700/10 transition-all duration-300 hover:-translate-y-8"
     >
-      <div className="relative h-320 lg:h-220">
+      <div className="relative h-280 sm:h-320 lg:h-220">
         <img
           src={article.image}
           alt={article.title}
