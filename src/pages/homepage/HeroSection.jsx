@@ -3,8 +3,12 @@ function HeroSection() {
     <section className="flex items-center justify-center pt-32 md:min-h-screen">
       <div className="container">
         <div className="grid grid-cols-12 items-center gap-12 lg:gap-40">
+          <div className="relative col-span-12 flex items-center justify-center sm:hidden">
+            <img src="/images/hero.png" className="max-w-248" alt="hero" />
+          </div>
+
           <div className="col-span-12 text-center lg:col-span-7 lg:text-right">
-            <h1 className="text-primary-900 text-3xl leading-48 font-extrabold md:text-5xl md:leading-60 md:font-bold">
+            <h1 className="text-primary-900 text-2xl leading-48 font-extrabold sm:text-3xl md:text-5xl md:leading-60 md:font-bold">
               آکادمی آموزش برنامه نویسی
               <br className="hidden md:block" /> و{' '}
               <span className="text-secondary-300">هوش مصنوعی</span>
@@ -14,7 +18,7 @@ function HeroSection() {
               اینجا نقطه شروع سفر حرفه ای تو به دنیانی هوش مصنوعیه
             </h3>
 
-            <div className="border-primary-500/22 shadow-primary-500/10 relative mt-32 rounded-2xl border p-30 shadow-lg backdrop-blur-[28px] sm:mt-25">
+            <div className="border-primary-500/22 shadow-primary-500/10 relative mt-42 rounded-2xl border p-30 shadow-lg backdrop-blur-[28px] sm:mt-25">
               <div className="bg-primary-900 shadow-primary-500/30 absolute -top-35 left-20 flex items-center justify-center rounded-full p-10 shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +82,7 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="relative col-span-12 flex sm:hidden lg:col-span-5 lg:flex lg:justify-end">
+          <div className="relative col-span-12 hidden lg:col-span-5 lg:flex lg:justify-end">
             <img src="/images/hero.png" alt="hero" />
           </div>
         </div>

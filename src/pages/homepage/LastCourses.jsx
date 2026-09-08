@@ -3,7 +3,7 @@ import CourseCard from './CourseCard';
 const courses = [
   {
     id: 1,
-    title: 'دوره جامع React',
+    title: 'دوره جامع ری اکت',
     description:
       'آموزش کامل React از مقدماتی تا پیشرفته همراه با پروژه‌های واقعی.',
     image: '/images/react.png',
@@ -13,7 +13,7 @@ const courses = [
   },
   {
     id: 2,
-    title: 'دوره Next.js',
+    title: 'دوره نکست جی اس',
     description:
       'ساخت پروژه‌های مدرن با Next.js، SSR، App Router و API Routes.',
     image: '/images/next.png',
@@ -23,7 +23,7 @@ const courses = [
   },
   {
     id: 3,
-    title: 'دوره Tailwind CSS',
+    title: 'دوره تیلویند',
     description: 'طراحی رابط کاربری حرفه‌ای با Tailwind CSS و پروژه عملی.',
     image: '/images/tailwind.jpg',
     slug: 'tailwind-course',
@@ -32,7 +32,7 @@ const courses = [
   },
   {
     id: 4,
-    title: 'دوره JavaScript پیشرفته',
+    title: 'دوره جاوااسکریپت پیشرفته',
     description:
       'یادگیری مفاهیم پیشرفته جاوااسکریپت همراه با مثال‌های کاربردی.',
     image: '/images/javascript.jpg',
@@ -90,7 +90,7 @@ export default function LastCourses() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-32 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-12 sm:grid-cols-2 sm:gap-32 lg:grid-cols-4">
           {courses.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}

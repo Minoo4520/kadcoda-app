@@ -4,28 +4,47 @@ export default function Article({ article }) {
   return (
     <Link
       to={`/blog/${article.slug}`}
-      className="group hover:bg-primary-50 relative block overflow-visible rounded-xl rounded-t-3xl bg-white shadow-lg shadow-gray-700/10 transition-all duration-300 hover:-translate-y-8"
+      className="group hover:bg-primary-50 relative mb-20 block overflow-visible rounded-xl rounded-t-3xl bg-white shadow-lg shadow-gray-700/10 transition-all duration-300 hover:-translate-y-8 sm:min-h-470 lg:min-h-auto"
     >
-      <div className="relative h-280 sm:h-320 lg:h-220">
+      <div className="relative h-180 sm:h-310 lg:h-220">
         <img
           src={article.image}
           alt={article.title}
           className="h-full w-full rounded-3xl object-cover"
         />
 
-        <span className="text-13 absolute right-10 bottom-10 rounded-md bg-gray-900/80 p-3 text-sm text-gray-50 transition">
+        <span className="text-13 absolute right-10 bottom-10 hidden rounded-md bg-gray-900/80 p-3 text-sm text-gray-50 transition sm:block">
           {article.time}
         </span>
       </div>
 
       <div className="p-20 pb-40">
-        <h3 className="text-20 text-primary-900 group-hover:text-primary-500 mt-10 font-bold transition">
+        <h3 className="text-20 text-primary-900 sm:text-md group-hover:text-primary-500 mt-10 text-sm font-bold transition md:text-lg">
           {article.title}
         </h3>
 
-        <p className="text-primary-900 mt-12 line-clamp-3 leading-24 transition">
+        <p className="text-primary-900 md:text-md mt-12 line-clamp-3 text-xs leading-24 transition sm:text-sm">
           {article.description}
         </p>
+
+        <div className="bg-success-300/25 mt-6 flex w-fit items-center gap-4 rounded-lg px-9 py-3 font-bold sm:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="text-success-400 size-14"
+          >
+            <circle cx="12" cy="12" r="9" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 7v5l3 2"
+            />
+          </svg>
+          <span className="text-success-400 text-xs">{article.time}</span>
+        </div>
       </div>
 
       {/* Arrow */}
