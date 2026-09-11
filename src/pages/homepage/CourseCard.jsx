@@ -85,7 +85,7 @@ export default function CourseCard({
             <div className="relative py-4">
               <div className="via-primary-400/20 absolute bottom-0 left-1/2 h-2.5 w-3/4 -translate-x-1/2 transform bg-gradient-to-r from-transparent to-transparent"></div>
             </div>
-            <button className="bg-primary-600 group-hover:shadow-primary-600/40 group-hover:text-secondary-300 text-primary-50 sm:text-md my-8 w-full cursor-pointer rounded-xl py-5 text-center text-xs font-semibold transition duration-300 group-hover:shadow-md sm:my-12 sm:py-8">
+            <button className="group-hover:shadow-primary-600/40 group-hover:text-secondary-300 text-primary-50 sm:text-md to-primary-600 my-8 w-full cursor-pointer rounded-xl bg-gradient-to-br from-[#1E4D9C] py-5 text-center text-xs font-semibold transition duration-300 group-hover:shadow-md sm:my-12 sm:py-8">
               مشاهده دوره
             </button>
           </div>
