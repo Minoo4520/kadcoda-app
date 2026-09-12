@@ -9,6 +9,7 @@ import HomePage from '../pages/homepage';
 import NotFound from '../pages/not-found/NotFound';
 import PanelLayout from '../pages/panel';
 import PanelDashboard from '../pages/panel/dashboard';
+import PanelCertificates from '../pages/panel/myCertificates';
 import PanelCourses from '../pages/panel/myCourses';
 
 const router = createBrowserRouter([
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
               {
                 path: 'courses',
                 element: <PanelCourses />,
+              },
+
+              {
+                path: 'certificates',
+                element: <PanelCertificates />,
               },
             ],
           },
