@@ -11,6 +11,7 @@ import PanelLayout from '../pages/panel';
 import PanelDashboard from '../pages/panel/dashboard';
 import PanelCertificates from '../pages/panel/myCertificates';
 import PanelCourses from '../pages/panel/myCourses';
+import PanelSupport from '../pages/panel/support';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
               {
                 path: 'certificates',
                 element: <PanelCertificates />,
+              },
+
+              {
+                path: 'support',
+                element: <PanelSupport />,
               },
             ],
           },

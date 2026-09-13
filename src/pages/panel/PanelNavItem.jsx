@@ -45,11 +45,16 @@ export default function PanelNavItem({
                 {label}
               </span>
 
-              {badge && (
-                <span className="text-primary-600 mr-auto flex h-18 w-18 items-center justify-center rounded-full bg-[#DCE5F0] px-6 py-2 text-xs font-bold">
-                  {badge}
-                </span>
-              )}
+              {badge &&
+                (!isActive ? (
+                  <span className="text-primary-600 mr-auto flex h-18 w-18 items-center justify-center rounded-full bg-[#DCE5F0] px-6 py-2 text-xs font-bold">
+                    {badge}
+                  </span>
+                ) : (
+                  <span className="text-secondary-300 bg-primary-600 mr-auto flex h-18 w-18 items-center justify-center rounded-full px-6 py-2 text-xs font-bold">
+                    {badge}
+                  </span>
+                ))}
             </>
           )}
         </>
