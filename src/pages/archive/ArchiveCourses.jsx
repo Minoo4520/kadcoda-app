@@ -94,7 +94,7 @@ export default function ArchiveCourses() {
     <section className="pt-28 pb-32 md:py-45 lg:pr-40">
       <div className="grid grid-cols-1 gap-24 sm:grid-cols-2 xl:grid-cols-3">
         {courses.map((course) => (
-          <CourseCard key={course.id} course={course} />
+          <CourseCard key={course.id} mobileHorizontal={true} course={course} />
         ))}
       </div>
 

@@ -103,7 +103,7 @@ export default function PanelSupport() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="overflow-hidden rounded-2xl p-20 shadow-[inset_-3px_-3px_8px_0px_#FFFFFFD9,_inset_4px_4px_10px_0px_#A3B1C68C]"
+            className="overflow-hidden rounded-2xl bg-[#EDF1F8] p-20 shadow-[inset_-3px_-3px_8px_0px_#FFFFFFD9,_inset_4px_4px_10px_0px_#A3B1C68C]"
           >
             <h3 className="text-sm font-black text-[#1C2B4A]">تیکت جدید</h3>
 
@@ -130,7 +130,7 @@ export default function PanelSupport() {
               </button>
               <button
                 onClick={() => setIsFormOpen(false)}
-                className="text-primary-600 col-span-2 cursor-pointer rounded-xl px-20 py-10 text-xs shadow-[-3px_-3px_8px_0px_#FFFFFFD9,_4px_4px_10px_0px_#A3B1C673] transition duration-300 hover:-translate-y-3 sm:col-span-1"
+                className="text-primary-600 col-span-2 cursor-pointer rounded-xl bg-[#E8EDF5] px-20 py-10 text-xs shadow-[-3px_-3px_8px_0px_#FFFFFFD9,_4px_4px_10px_0px_#A3B1C673] transition duration-300 hover:-translate-y-3 sm:col-span-1"
               >
                 انصراف
               </button>

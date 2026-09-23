@@ -101,3 +101,10 @@ html {
     font-size: 14px !important;
   }
 }
+
+.grid-bg {
+  background-image:
+    linear-gradient(#f7f7ff 1px, transparent 1px),
+    linear-gradient(90deg, #f7f7ff 1px, transparent 1px);
+  background-size: 24px 24px;
+}

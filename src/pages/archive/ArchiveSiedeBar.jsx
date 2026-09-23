@@ -9,8 +9,22 @@ const ArchiveSideBar = () => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="shadow-primary-900/30 block w-full cursor-pointer rounded-md px-10 py-12 text-sm shadow-xs transition duration-300 md:hidden"
+        className="text-primary-900 shadow-primary-900/20 hover:shadow-primary-900/30 border-primary-100 flex w-full cursor-pointer items-center justify-center gap-2 rounded-md border bg-white px-10 py-12 text-sm shadow-md transition duration-300 hover:shadow-lg md:hidden"
       >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="text-primary-900 h-16 w-16"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+          />
+        </svg>
         فیلتر کردن
       </button>
 
@@ -22,8 +36,22 @@ const ArchiveSideBar = () => {
         } md:pointer-events-auto md:relative md:mt-40 md:block md:h-auto md:translate-x-0 lg:w-320`}
       >
         <div className="border-b border-gray-200 pb-32">
-          <h3 className="mb-24 text-lg font-semibold text-gray-700">
-            جستجو کنید{' '}
+          <h3 className="mb-24 flex items-center gap-8 text-lg font-semibold text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="h-20 w-20 text-gray-700"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+            جستجو کنید
           </h3>
 
           <input
@@ -34,7 +62,23 @@ const ArchiveSideBar = () => {
         </div>
 
         <div className="border-b border-gray-200 py-32">
-          <h3 className="mb-32 text-lg font-semibold text-gray-700">
+          <h3 className="mb-32 flex items-center gap-8 text-lg font-semibold text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="h-20 w-20 text-gray-700"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"
+              />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <circle cx="17.5" cy="17.5" r="3.5" />
+            </svg>
             مرتب‌سازی بر اساس
           </h3>
           <div className="space-y-32 sm:space-y-28 lg:space-y-32">

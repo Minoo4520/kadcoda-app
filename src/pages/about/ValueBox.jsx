@@ -27,7 +27,7 @@ function OurValuesBox({ icon, title, caption }) {
         <h3 className="text-primary-900 text-lg font-bold">{title}</h3>
       </div>
 
-      <p className="relative z-10 mt-5 text-sm leading-25 text-gray-500">
+      <p className="relative z-10 mt-5 text-xs leading-25 text-gray-500 sm:text-sm">
         {caption}
       </p>
     </div>

@@ -4,7 +4,7 @@ export default function Article({ article }) {
   return (
     <Link
       to={`/blog/${article.slug}`}
-      className="group hover:bg-primary-50 relative mb-20 block overflow-visible rounded-xl rounded-t-3xl bg-white shadow-lg shadow-gray-700/10 transition-all duration-300 hover:-translate-y-8 sm:min-h-470 lg:min-h-auto"
+      className="group hover:bg-primary-50 relative mb-20 block min-h-380 overflow-visible rounded-xl rounded-t-3xl bg-white shadow-lg shadow-gray-700/10 transition-all duration-300 hover:-translate-y-8 sm:min-h-470 lg:min-h-auto"
     >
       <div className="relative h-180 sm:h-310 lg:h-220">
         <img
@@ -23,7 +23,7 @@ export default function Article({ article }) {
           {article.title}
         </h3>
 
-        <p className="text-primary-900 md:text-md mt-12 line-clamp-3 text-xs leading-24 transition sm:text-sm">
+        <p className="text-primary-900 md:text-md mt-12 line-clamp-2 text-xs leading-24 transition sm:text-sm">
           {article.description}
         </p>
 

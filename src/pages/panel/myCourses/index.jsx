@@ -44,7 +44,7 @@ export default function PanelCourses() {
       >
         <motion.div
           variants={slideFromLeft}
-          className="col-span-3 rounded-2xl p-16 shadow-[inset_-3px_-3px_8px_0px_#FFFFFFD9,_inset_4px_4px_10px_0px_#A3B1C68C] md:col-span-1"
+          className="col-span-3 rounded-2xl bg-[#EDF1F8] p-16 shadow-[inset_-3px_-3px_8px_0px_#FFFFFFD9,_inset_4px_4px_10px_0px_#A3B1C68C] md:col-span-1"
         >
           <motion.div
             variants={iconDrop}
@@ -64,7 +64,7 @@ export default function PanelCourses() {
 
         <motion.div
           variants={slideFromLeft}
-          className="col-span-3 rounded-2xl p-16 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-1"
+          className="col-span-3 rounded-2xl bg-[#EDF1F8] p-16 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-1"
         >
           <motion.div
             variants={iconDrop}
@@ -82,7 +82,7 @@ export default function PanelCourses() {
 
         <motion.div
           variants={slideFromLeft}
-          className="col-span-6 rounded-2xl p-16 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-1"
+          className="col-span-6 rounded-2xl bg-[#EDF1F8] p-16 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-1"
         >
           <motion.div
             variants={iconDrop}

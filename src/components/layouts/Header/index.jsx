@@ -59,43 +59,37 @@ function Header() {
               className="hover:text-primary-500 cursor-pointer p-2 text-gray-800 transition lg:hidden"
               aria-label="منو"
             >
-              <button
-                onClick={toggleMenu}
-                className="hover:text-primary-500 cursor-pointer p-2 text-gray-800 transition lg:hidden"
-                aria-label="منو"
-              >
-                {isMenuOpen ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="text-primary-900 h-32 w-32"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="text-primary-900 h-32 w-32"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                  </svg>
-                )}
-              </button>{' '}
+              {isMenuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="text-primary-900 h-32 w-32"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="text-primary-900 h-32 w-32"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              )}
             </button>
           </nav>
         </div>
@@ -139,7 +133,7 @@ function Header() {
           ))}
           <div className="my-4 h-px bg-gray-200"></div>
           <Link
-            to="#"
+            to="/panel"
             className="bg-primary-500 hover:bg-primary-600 rounded-[5px] px-25 py-10 text-center text-white transition"
           >
             ورود و ثبت نام

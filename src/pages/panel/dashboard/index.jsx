@@ -71,7 +71,7 @@ export default function PanelDashboard() {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="from-primary-600 flex h-117 w-full items-center justify-between rounded-2xl bg-gradient-to-br to-[#112552] shadow-[-4px_-4px_12px_0px_#FFFFFF80,_8px_8px_20px_0px_#193B7359]"
       >
-        <div className="relative flex h-117 w-full items-center justify-between rounded-[40px] bg-[radial-gradient(98.62%_98.62%_at_85%_50%,_rgba(247,185,40,0.14)_0%,_rgba(247,185,40,0)_60%)] px-30">
+        <div className="relative flex h-117 w-full items-center justify-between rounded-[40px] bg-[radial-gradient(98.62%_98.62%_at_85%_50%,_rgba(247,185,40,0.14)_0%,_rgba(247,185,40,0)_60%)] px-18 sm:px-30">
           <div>
             <p className="text-xs text-[#FFFFFF66]">خوش آمدید</p>
             <h1 className="pt-4 text-xl font-black text-white">رضا کریمی</h1>
@@ -132,7 +132,7 @@ export default function PanelDashboard() {
       >
         <motion.div
           variants={slideFromLeft}
-          className="col-span-12 rounded-2xl p-20 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-7"
+          className="col-span-12 rounded-2xl bg-[#EDF1F8] p-20 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-7"
         >
           <div className="flex w-full items-center justify-between">
             <div>
@@ -150,7 +150,9 @@ export default function PanelDashboard() {
 
           <div className="mt-13 flex items-center justify-between rounded-xl bg-[#E4E9F2] p-10 shadow-[inset_-2px_-2px_4px_0px_#FFFFFFCC,_inset_2px_2px_5px_0px_#A3B1C666]">
             <div className="flex items-center">
-              <div className="h-44 w-44 rounded-xl shadow-[2px_2px_6px_0px_#A3B1C680]"></div>
+              <div className="flex h-44 w-44 items-center justify-center rounded-xl shadow-[2px_2px_6px_0px_#A3B1C680]">
+                <img src="/icons/tick-green.svg" alt="" />
+              </div>
               <div className="mr-8 flex flex-col gap-4">
                 <span className="text-xs font-bold text-[#1C2B4A]">
                   مدیریت محصول دیجیتال
@@ -164,7 +166,9 @@ export default function PanelDashboard() {
           </div>
           <div className="mt-10 flex items-center justify-between rounded-xl bg-[#E4E9F2] p-10 shadow-[inset_-2px_-2px_4px_0px_#FFFFFFCC,_inset_2px_2px_5px_0px_#A3B1C666]">
             <div className="flex items-center">
-              <div className="h-44 w-44 rounded-xl shadow-[2px_2px_6px_0px_#A3B1C680]"></div>
+              <div className="flex h-44 w-44 items-center justify-center rounded-xl shadow-[2px_2px_6px_0px_#A3B1C680]">
+                <img src="/icons/tick-green.svg" alt="" />
+              </div>{' '}
               <div className="mr-8 flex flex-col gap-4">
                 <span className="text-xs font-bold text-[#1C2B4A]">
                   طراحی رابط کاربری با Figma
@@ -180,7 +184,7 @@ export default function PanelDashboard() {
 
         <motion.div
           variants={slideFromLeft}
-          className="col-span-12 rounded-2xl p-20 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-5"
+          className="col-span-12 rounded-2xl bg-[#EDF1F8] p-20 shadow-[-4px_-4px_12px_0px_#FFFFFFE5,_6px_6px_16px_0px_#A3B1C680] md:col-span-5"
         >
           <div className="flex w-full items-center justify-between">
             <div>
@@ -244,7 +248,7 @@ export default function PanelDashboard() {
           </button>
         </div>
 
-        <div className="mt-20 grid grid-cols-12 gap-20 px-16 md:gap-0">
+        <div className="mt-20 grid grid-cols-12 gap-20 sm:px-16 md:gap-0">
           <div className="col-span-12 flex gap-10 md:col-span-5 md:pl-20">
             <div className="flex h-102 grow basis-1 flex-col items-center justify-center rounded-xl bg-[#FFFFFF14] shadow-[inset_1px_1px_4px_0px_#00000033] sm:w-160">
               <span className="text-xl font-black text-white">3</span>

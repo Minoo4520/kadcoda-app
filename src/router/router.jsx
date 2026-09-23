@@ -11,6 +11,10 @@ import PanelLayout from '../pages/panel';
 import PanelDashboard from '../pages/panel/dashboard';
 import PanelCertificates from '../pages/panel/myCertificates';
 import PanelCourses from '../pages/panel/myCourses';
+import PanelProfile from '../pages/panel/profile';
+import PanelProfileInfo from '../pages/panel/profile/PanelProfileInfo';
+import PanelProfileNotification from '../pages/panel/profile/PanelProfileNotification';
+import PanelProfileSecurity from '../pages/panel/profile/PanelProfileSecurity';
 import PanelSupport from '../pages/panel/support';
 
 const router = createBrowserRouter([
@@ -59,6 +63,27 @@ const router = createBrowserRouter([
               {
                 path: 'support',
                 element: <PanelSupport />,
+              },
+
+              {
+                path: 'profile',
+                element: <PanelProfile />,
+                children: [
+                  {
+                    index: true,
+                    element: <PanelProfileInfo />,
+                  },
+
+                  {
+                    path: 'security',
+                    element: <PanelProfileSecurity />,
+                  },
+
+                  {
+                    path: 'notification',
+                    element: <PanelProfileNotification />,
+                  },
+                ],
               },
             ],
           },

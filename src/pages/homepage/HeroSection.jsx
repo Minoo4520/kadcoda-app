@@ -8,13 +8,13 @@ function HeroSection() {
           </div>
 
           <div className="col-span-12 text-center lg:col-span-7 lg:text-right">
-            <h1 className="text-primary-900 text-2xl leading-48 font-extrabold sm:text-3xl md:text-5xl md:leading-60 md:font-bold">
+            <h1 className="text-primary-900 text-2xl leading-40 font-extrabold sm:text-3xl md:text-5xl md:leading-60 md:font-bold">
               آکادمی آموزش برنامه نویسی
               <br className="hidden md:block" /> و{' '}
               <span className="text-secondary-300">هوش مصنوعی</span>
             </h1>
 
-            <h3 className="text-16 text-primary-900 mt-25">
+            <h3 className="text-primary-900 mt-16 text-[16px] sm:mt-25">
               اینجا نقطه شروع سفر حرفه ای تو به دنیانی هوش مصنوعیه
             </h3>
 
@@ -39,9 +39,9 @@ function HeroSection() {
               </div>
 
               <p className="text-primary-600 text-xs sm:text-base">
-                با بیش از ۲۵ سال تجربه در ورزش بدنسازی و تناسب اندام تصمیم
-                گرفتیم دانش و تجربه خود را در اختیار همه علاقه‌مندان به این رشته
-                ورزشی جذاب قرار دهیم.
+                با سال‌ها تجربه در برنامه‌نویسی و توسعه نرم‌افزار، دانش خود را
+                در وب‌سایت آموزشی ما در اختیار شما قرار می‌دهیم. از مبانی تا
+                پروژه‌های واقعی، همه چیز را اصولی و علمی بیاموزید.
               </p>
             </div>
 

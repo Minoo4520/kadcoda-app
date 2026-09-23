@@ -2,16 +2,6 @@ import CourseCard from './CourseCard';
 
 const courses = [
   {
-    id: 1,
-    title: 'دوره جامع ری اکت',
-    description:
-      'آموزش کامل React از مقدماتی تا پیشرفته همراه با پروژه‌های واقعی.',
-    image: '/images/react.png',
-    slug: 'react-course',
-    hours: 18,
-    price: '1,950,000 تومان',
-  },
-  {
     id: 2,
     title: 'دوره نکست جی اس',
     description:
@@ -40,15 +30,7 @@ const courses = [
     hours: 25,
     price: '2,150,000 تومان',
   },
-  {
-    id: 5,
-    title: 'دوره TypeScript',
-    description: 'تسلط بر TypeScript برای توسعه پروژه‌های بزرگ و حرفه‌ای.',
-    image: '/images/typescript.png',
-    slug: 'typescript-course',
-    hours: 16,
-    price: '1,650,000 تومان',
-  },
+
   {
     id: 6,
     title: 'دوره Node.js',
@@ -90,9 +72,13 @@ export default function LastCourses() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-12 sm:grid-cols-2 sm:gap-32 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-32 lg:grid-cols-4">
           {courses.map((course) => (
-            <CourseCard key={course.id} course={course} />
+            <CourseCard
+              mobileHorizontal={true}
+              key={course.id}
+              course={course}
+            />
           ))}
         </div>
 

@@ -169,7 +169,7 @@ export default function PanelCertificates() {
         transition={{ duration: 0.55, ease: 'easeOut', delay: 0.5 }}
         className="mt-20"
       >
-        <div className="flex flex-col items-center justify-center gap-20 rounded-2xl p-26 shadow-[inset_-3px_-3px_8px_0px_#FFFFFFD9,_inset_4px_4px_10px_0px_#A3B1C68C]">
+        <div className="flex flex-col items-center justify-center gap-20 rounded-2xl bg-[#EDF1F8] p-26 shadow-[inset_-3px_-3px_8px_0px_#FFFFFFD9,_inset_4px_4px_10px_0px_#A3B1C68C]">
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
