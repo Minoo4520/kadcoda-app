@@ -1,3 +1,6 @@
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import CourseCard from './CourseCard';
 
 const courses = [
@@ -41,20 +44,43 @@ const courses = [
 
 export default function OfflineCourses() {
   return (
-    <section className="py-96">
+    <section className="py-56 md:py-72 lg:py-96">
       <div className="container">
         <div className="mb-30">
           <h2 className="text-3xl font-black text-gray-900">دوره های حضوری</h2>
-
           <p className="mt-6 text-gray-500">
             جدیدترین دوره‌های حضوری برگزار شده
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-32 lg:grid-cols-4">
+        <div className="block sm:hidden">
+          <Swiper
+            modules={[Navigation]}
+            navigation
+            slidesPerView={1.2}
+            spaceBetween={16}
+            centeredSlides={false}
+            className="offline-slider !px-4"
+            dir="rtl"
+          >
+            {courses.map((course) => (
+              <SwiperSlide key={course.id}>
+                <CourseCard course={course} slide={true} isPresential />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        <div className="hidden grid-cols-2 gap-12 sm:grid sm:grid-cols-2 sm:gap-32 lg:grid-cols-4">
           {courses.map((course) => (
-            <CourseCard key={course.id} course={course} isPresential={true} />
+            <CourseCard key={course.id} course={course} isPresential />
           ))}
+        </div>
+
+        <div className="mt-32 flex w-full items-center justify-center">
+          <button className="shadow-primary-900/30 hover:bg-primary-900 hover:text-primary-50 cursor-pointer rounded-md px-10 py-12 text-sm shadow-xs transition duration-300">
+            مشاهده همه دوره ها
+          </button>
         </div>
       </div>
     </section>

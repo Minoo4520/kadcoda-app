@@ -2,18 +2,8 @@ import CourseCard from './CourseCard';
 
 const courses = [
   {
-    id: 1,
-    title: 'دوره جامع React',
-    description:
-      'آموزش کامل React از مقدماتی تا پیشرفته همراه با پروژه‌های واقعی.',
-    image: '/images/react.png',
-    slug: 'react-course',
-    hours: 18,
-    price: '1,950,000 تومان',
-  },
-  {
     id: 2,
-    title: 'دوره Next.js',
+    title: 'دوره نکست جی اس',
     description:
       'ساخت پروژه‌های مدرن با Next.js، SSR، App Router و API Routes.',
     image: '/images/next.png',
@@ -23,7 +13,7 @@ const courses = [
   },
   {
     id: 3,
-    title: 'دوره Tailwind CSS',
+    title: 'دوره تیلویند',
     description: 'طراحی رابط کاربری حرفه‌ای با Tailwind CSS و پروژه عملی.',
     image: '/images/tailwind.jpg',
     slug: 'tailwind-course',
@@ -32,7 +22,7 @@ const courses = [
   },
   {
     id: 4,
-    title: 'دوره JavaScript پیشرفته',
+    title: 'دوره جاوااسکریپت پیشرفته',
     description:
       'یادگیری مفاهیم پیشرفته جاوااسکریپت همراه با مثال‌های کاربردی.',
     image: '/images/javascript.jpg',
@@ -40,15 +30,7 @@ const courses = [
     hours: 25,
     price: '2,150,000 تومان',
   },
-  {
-    id: 5,
-    title: 'دوره TypeScript',
-    description: 'تسلط بر TypeScript برای توسعه پروژه‌های بزرگ و حرفه‌ای.',
-    image: '/images/typescript.png',
-    slug: 'typescript-course',
-    hours: 16,
-    price: '1,650,000 تومان',
-  },
+
   {
     id: 6,
     title: 'دوره Node.js',
@@ -80,7 +62,7 @@ const courses = [
 
 export default function LastCourses() {
   return (
-    <section className="py-96">
+    <section className="py-56 md:py-72 lg:py-96">
       <div className="container">
         <div className="mb-30">
           <h2 className="text-3xl font-black text-gray-900">آخرین دوره‌ها</h2>
@@ -90,10 +72,20 @@ export default function LastCourses() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-32 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-32 lg:grid-cols-4">
           {courses.map((course) => (
-            <CourseCard key={course.id} course={course} />
+            <CourseCard
+              mobileHorizontal={true}
+              key={course.id}
+              course={course}
+            />
           ))}
+        </div>
+
+        <div className="mt-32 flex w-full items-center justify-center">
+          <button className="shadow-primary-900/30 hover:bg-primary-900 hover:text-primary-50 cursor-pointer rounded-md px-10 py-12 text-sm shadow-xs transition duration-300">
+            مشاهده همه دوره ها
+          </button>
         </div>
       </div>
     </section>

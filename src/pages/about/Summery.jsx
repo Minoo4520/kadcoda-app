@@ -20,16 +20,16 @@ function ListItem({ children, color }) {
 
 export default function AboutContent() {
   return (
-    <section className="pt-45 pb-96">
+    <section className="pt-45 pb-56 md:pb-72 lg:pb-96">
       <div className="container-layout">
         <div className="relative mx-auto max-w-3xl text-center">
           <span className="text-primary text-lg font-bold">درباره کدکدا</span>
 
-          <h2 className="my-32 text-4xl font-black">
+          <h2 className="my-32 text-2xl font-black sm:text-4xl">
             اولین قدم برای تبدیل شدن به یک برنامه‌نویس حرفه‌ای
           </h2>
 
-          <p className="mt-32 leading-25 text-gray-600">
+          <p className="sm:text-md mt-32 text-xs leading-25 text-gray-600 sm:text-sm">
             کدکدا یک پلتفرم آموزشی تخصصی در حوزه برنامه‌نویسی است که با تمرکز بر
             آموزش‌های پروژه‌محور، محتوای به‌روز و پشتیبانی حرفه‌ای، مسیر یادگیری
             را برای همه ساده‌تر کرده است. هدف ما تنها آموزش نیست؛ بلکه
@@ -91,25 +91,27 @@ export default function AboutContent() {
 
         <div className="mt-40 grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-white p-32 shadow-lg">
-            <h3 className="mb-16 text-2xl font-extrabold">مأموریت ما</h3>
+            <h3 className="text-primary-900 mb-16 text-xl font-extrabold sm:text-2xl">
+              مأموریت ما
+            </h3>
 
-            <ul className="mt-8 space-y-24">
-              <ListItem color="text-primary-900">
+            <ul className="mt-8 space-y-16 sm:space-y-24">
+              <ListItem color="text-primary-900 text-sm sm:text-md">
                 آموزش پروژه‌محور و کاربردی
               </ListItem>
-              <ListItem color="text-primary-900">
+              <ListItem color="text-primary-900 text-sm sm:text-md">
                 بروزرسانی مداوم دوره‌ها
               </ListItem>
-              <ListItem color="text-primary-900">
+              <ListItem color="text-primary-900 text-sm sm:text-md">
                 پشتیبانی و منتورینگ تخصصی
               </ListItem>
-              <ListItem color="text-primary-900">
+              <ListItem color="text-primary-900 text-sm sm:text-md">
                 مسیر یادگیری هدفمند برای هر تکنولوژی
               </ListItem>
             </ul>
           </div>
 
-          <div className="bg-primary shadow-primary-600/40 rounded-3xl p-32 text-white shadow-xl">
+          {/* <div className="bg-primary shadow-primary-600/40 rounded-3xl p-32 text-white shadow-xl">
             <h3 className="mb-16 text-2xl font-extrabold">چرا کدکدا؟</h3>
 
             <ul className="mt-8 space-y-24">
@@ -119,6 +121,27 @@ export default function AboutContent() {
               </ListItem>
               <ListItem color="text-white">جامعه آموزشی پویا</ListItem>
               <ListItem color="text-white">
+                دسترسی دائمی به دوره‌ها و آپدیت‌ها
+              </ListItem>
+            </ul>
+          </div> */}
+
+          <div className="bg-primary-50 shadow-primary-100/40 mt-24 rounded-3xl p-32 text-white shadow-xl sm:mt-0">
+            <h3 className="text-primary-900 mb-16 text-xl font-extrabold sm:text-2xl">
+              چرا کدکدا؟
+            </h3>
+
+            <ul className="mt-8 space-y-16 sm:space-y-24">
+              <ListItem color="text-primary-900 text-sm sm:text-md">
+                دوره‌های جامع و به‌روز
+              </ListItem>
+              <ListItem color="text-primary-900 text-sm sm:text-md">
+                اساتید باتجربه و فعال در صنعت
+              </ListItem>
+              <ListItem color="text-primary-900 text-sm sm:text-md">
+                جامعه آموزشی پویا
+              </ListItem>
+              <ListItem color="text-primary-900 text-sm sm:text-md">
                 دسترسی دائمی به دوره‌ها و آپدیت‌ها
               </ListItem>
             </ul>

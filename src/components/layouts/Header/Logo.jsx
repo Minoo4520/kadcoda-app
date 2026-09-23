@@ -1,7 +1,11 @@
-export default function Logo() {
+export default function Logo({ secondary = false }) {
   return (
-    <span className="text-3xl font-bold lg:text-4xl">
-      کد<span className="text-primary-500">کدا</span>
-    </span>
+    <div className="max-w-120 md:max-w-160">
+      {secondary ? (
+        <img src="/logo-secondary.png" alt="logo" />
+      ) : (
+        <img src="/logo.png" alt="logo" />
+      )}
+    </div>
   );
 }

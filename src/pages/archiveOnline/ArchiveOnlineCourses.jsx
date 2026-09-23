@@ -91,10 +91,15 @@ const courses = [
 
 export default function ArchiveOnlineCourses() {
   return (
-    <section className="py-45 pr-40">
-      <div className="grid grid-cols-2 gap-24 lg:grid-cols-3">
+    <section className="pt-28 pb-32 md:py-45 lg:pr-40">
+      <div className="grid grid-cols-1 gap-24 sm:grid-cols-2 xl:grid-cols-3">
         {courses.map((course) => (
-          <CourseCard key={course.id} course={course} isPresential={true} />
+          <CourseCard
+            key={course.id}
+            course={course}
+            mobileHorizontal={true}
+            isPresential={true}
+          />
         ))}
       </div>
 

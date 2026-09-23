@@ -20,14 +20,14 @@ function OurValuesBox({ icon, title, caption }) {
       </svg>
 
       <div className="relative z-10 flex items-center gap-12">
-        <div className="bg-primary/10 text-primary flex h-34 w-34 items-center justify-center rounded-2xl">
+        <div className="bg-primary/10 text-primary-400 flex h-34 w-34 items-center justify-center rounded-2xl">
           {icon}
         </div>
 
         <h3 className="text-primary-900 text-lg font-bold">{title}</h3>
       </div>
 
-      <p className="text-md relative z-10 mt-5 leading-25 text-gray-500">
+      <p className="relative z-10 mt-5 text-xs leading-25 text-gray-500 sm:text-sm">
         {caption}
       </p>
     </div>

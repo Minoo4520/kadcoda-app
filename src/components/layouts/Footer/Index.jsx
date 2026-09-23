@@ -1,16 +1,21 @@
+import { useState } from 'react';
+
 import { Link } from 'react-router';
 
 import Logo from '../Header/Logo';
 
 export default function Footer() {
+  const [isQuickOpen, setIsQuickOpen] = useState(false);
+  const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+
   return (
     <>
-      <footer className="mt-45 bg-gray-900 py-50 text-white">
+      <footer className="mt-56 bg-gray-900 py-50 text-white md:mt-72 lg:mt-96">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 gap-40 lg:grid-cols-6">
+          <div className="grid grid-cols-1 gap-40 md:grid-cols-2 lg:grid-cols-6">
             {/* About */}
-            <div className="col-span-2">
-              <Logo />
+            <div className="col-span-1 md:col-span-2 lg:col-span-2">
+              <Logo secondary={true} />
 
               <p className="mt-10 text-sm leading-30 text-white/70">
                 آموزش برنامه نویسی به صورت حضوری و آنلاین با پروژه‌های واقعی و
@@ -72,66 +77,83 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Quick Links */}
+            {/* Quick Links (آکاردئونی در موبایل) */}
             <div>
-              <h4 className="text-primary mb-18 text-lg font-bold">
-                دسترسی سریع
+              <h4
+                onClick={() => setIsQuickOpen(!isQuickOpen)}
+                className="text-primary-50 mb-18 flex cursor-pointer items-center justify-between text-lg font-bold lg:cursor-default"
+              >
+                <span>دسترسی سریع</span>
+                <span className="lg:hidden">{isQuickOpen ? '−' : '+'}</span>
               </h4>
 
-              <ul className="space-y-14">
+              <ul
+                className={`space-y-14 ${isQuickOpen ? 'block' : 'hidden'} lg:block`}
+              >
                 <li>
                   <Link
                     to="/"
-                    className="hover:text-primary-500 text-sm"
+                    className="hover:text-secondary-300 text-sm"
                     href="#"
                   >
                     خانه
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500 text-sm" href="/archive">
+                  <a
+                    className="hover:text-secondary-300 text-sm"
+                    href="/archive"
+                  >
                     دوره‌ها
                   </a>
                 </li>
                 <li>
                   <Link
                     to="/about"
-                    className="hover:text-primary-500 text-sm"
+                    className="hover:text-secondary-300 text-sm"
                     href="/about"
                   >
                     درباره ما
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500 text-sm" href="#">
+                  <a className="hover:text-secondary-300 text-sm" href="#">
                     اساتید
                   </a>
                 </li>
               </ul>
             </div>
 
-            {/* Courses */}
+            {/* Courses (آکاردئونی در موبایل) */}
             <div>
-              <h4 className="text-primary mb-18 text-lg font-bold">دوره‌ها</h4>
+              <h4
+                onClick={() => setIsCoursesOpen(!isCoursesOpen)}
+                className="text-primary-50 mb-18 flex cursor-pointer items-center justify-between text-lg font-bold lg:cursor-default"
+              >
+                <span>دوره‌ها</span>
+                <span className="lg:hidden">{isCoursesOpen ? '−' : '+'}</span>
+              </h4>
 
-              <ul className="space-y-14">
+              <ul
+                className={`space-y-14 ${isCoursesOpen ? 'block' : 'hidden'} lg:block`}
+              >
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     React
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     Next.js
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     Node.js
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-primary-500" href="#">
+                  <a className="hover:text-secondary-300" href="#">
                     Tailwind CSS
                   </a>
                 </li>
@@ -139,77 +161,75 @@ export default function Footer() {
             </div>
 
             {/* Contact */}
-            <div className="col-span-2">
-              <h4 className="text-primary mb-18 text-lg font-bold">
+            <div className="col-span-1 md:col-span-2 lg:col-span-2">
+              <h4 className="text-primary-50 mb-18 text-lg font-bold">
                 ارتباط با ما
               </h4>
 
               <ul className="space-y-14 text-white/70">
-                <ul className="space-y-14 text-white/70">
-                  <li className="flex items-center gap-10">
-                    {/* Phone */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="text-secondary size-18"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013 5.18 2 2 0 015 3h3a2 2 0 012 1.72l.38 2.66a2 2 0 01-.57 1.72L8.91 10.91a16 16 0 006.18 6.18l1.81-1.28a2 2 0 011.72-.57l2.66.38A2 2 0 0122 16.92z"
-                      />
-                    </svg>
+                <li className="flex items-center gap-10">
+                  {/* Phone */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="text-secondary size-18"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013 5.18 2 2 0 015 3h3a2 2 0 012 1.72l.38 2.66a2 2 0 01-.57 1.72L8.91 10.91a16 16 0 006.18 6.18l1.81-1.28a2 2 0 011.72-.57l2.66.38A2 2 0 0122 16.92z"
+                    />
+                  </svg>
 
-                    <span className="text-sm">2867 123 0912</span>
-                  </li>
+                  <span className="text-sm">2867 123 0912</span>
+                </li>
 
-                  <li className="flex items-center gap-10">
-                    {/* Email */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="text-secondary size-18"
-                    >
-                      <rect x="3" y="5" width="18" height="14" rx="2" />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 7l9 6 9-6"
-                      />
-                    </svg>
+                <li className="flex items-center gap-10">
+                  {/* Email */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="text-secondary size-18"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 7l9 6 9-6"
+                    />
+                  </svg>
 
-                    <span className="text-sm">info@example.com</span>
-                  </li>
+                  <span className="text-sm">info@example.com</span>
+                </li>
 
-                  <li className="flex items-center gap-10">
-                    {/* Location */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="text-secondary size-18"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"
-                      />
-                      <circle cx="12" cy="10" r="2.5" />
-                    </svg>
+                <li className="flex items-center gap-10">
+                  {/* Location */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="text-secondary size-18"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"
+                    />
+                    <circle cx="12" cy="10" r="2.5" />
+                  </svg>
 
-                    <span className="text-sm">
-                      قزوین، باراجین، پارک علم و فناوری
-                    </span>
-                  </li>
-                </ul>
+                  <span className="text-sm">
+                    قزوین، باراجین، پارک علم و فناوری
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
