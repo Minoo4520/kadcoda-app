@@ -21,9 +21,9 @@ export default function CourseCard({
   return (
     <Link to={`/course/${course.slug}`}>
       <div
-        className={`group ${heightClasses} overflow-hidden rounded-[20px] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
+        className={`group ${heightClasses} overflow-hidden rounded-[20px] transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
           mobileHorizontal
-            ? 'grid grid-cols-[150px_1fr] items-center gap-1.5 sm:block'
+            ? 'grid grid-cols-[150px_1fr] items-center gap-1.5 sm:block sm:border sm:border-gray-200 sm:bg-white sm:shadow-sm'
             : ' border border-gray-200 bg-white shadow-sm'
         }`}
       >

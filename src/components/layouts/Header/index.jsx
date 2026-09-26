@@ -48,7 +48,7 @@ function Header() {
             </ul>
 
             <Link
-              to="#"
+              to="/panel"
               className="bg-secondary-500 hover:bg-primary-900 hover:text-secondary-600 text-primary-900 hidden rounded-[5px] px-25 py-10 font-bold transition lg:inline-block"
             >
               ورود و ثبت نام

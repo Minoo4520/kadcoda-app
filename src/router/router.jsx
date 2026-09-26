@@ -4,7 +4,7 @@ import RootLayout from '../components/layouts/RootLayout';
 import About from '../pages/about';
 import Archive from '../pages/archive';
 import ArchiveOnline from '../pages/archiveOnline';
-import Detail from '../pages/course-detail';
+import DetailCourse from '../pages/detail';
 import HomePage from '../pages/homepage';
 import NotFound from '../pages/not-found/NotFound';
 import PanelLayout from '../pages/panel';
@@ -25,7 +25,9 @@ const router = createBrowserRouter([
         path: '/',
         children: [
           { index: true, element: <HomePage /> },
-          { path: 'detail', element: <Detail /> },
+
+          { path: 'course/:slug', element: <DetailCourse /> },
+
           {
             path: 'about',
             element: <About />,
