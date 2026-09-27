@@ -1,24 +1,23 @@
 import { useState } from 'react';
 
-import { curriculum } from '../data/courseData';
 import AccordionItem from './AccordionItem';
 
-export default function CurriculumTab() {
+export default function CurriculumTab({ course }) {
+  const curriculum = course.curriculum;
   const [openIds, setOpenIds] = useState([curriculum[0]?.id]);
 
-  const toggle = (id) => {
+  const toggle = (id) =>
     setOpenIds((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
     );
-  };
 
   return (
-    <div className="space-y-4">
-      <div className="mb-6">
-        <h3 className="mb-1 text-lg font-bold text-[#1E1B4B]">
+    <div className="space-y-16">
+      <div className="mb-16 sm:mb-24">
+        <h3 className="text-primary text-md mb-4 font-bold sm:text-lg">
           ریز سرفصل‌های تفکیک شده
         </h3>
-        <p className="text-xs text-[#64748B]">
+        <p className="mt-4 text-xs text-[#64748B] sm:mt-0">
           روی هر سرفصل کلیک کنید تا جزییات دقیق زمان‌ها و موضوعات را ببینید.
         </p>
       </div>

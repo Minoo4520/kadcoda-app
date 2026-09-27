@@ -3,10 +3,10 @@ export default function TabButton({ isActive, onClick, children }) {
     <button
       type="button"
       onClick={onClick}
-      className={`flex-1 rounded-xl py-3 text-center text-sm transition-all ${
+      className={`flex-1 cursor-pointer rounded-xl py-12 text-center text-[10px] transition-all sm:text-sm ${
         isActive
-          ? 'bg-[#4F46E5] font-bold text-white'
-          : 'font-medium text-[#64748B] hover:text-[#1E1B4B]'
+          ? 'bg-primary-600 font-bold text-white'
+          : 'hover:text-primary-800 font-medium text-[#64748B]'
       }`}
     >
       {children}
