@@ -4,6 +4,7 @@ import RootLayout from '../components/layouts/RootLayout';
 import About from '../pages/about';
 import Archive from '../pages/archive';
 import ArchiveOnline from '../pages/archiveOnline';
+import Contact from '../pages/contact';
 import DetailCourse from '../pages/detail';
 import HomePage from '../pages/homepage';
 import NotFound from '../pages/not-found/NotFound';
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
           {
             path: 'about',
             element: <About />,
+          },
+
+          {
+            path: 'contact',
+            element: <Contact />,
           },
 
           {
