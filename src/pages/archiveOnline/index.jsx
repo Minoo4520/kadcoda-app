@@ -1,4 +1,4 @@
-import Footer from '../../components/layouts/Footer/Index';
+import Footer from '../../components/layouts/Footer';
 import Header from '../../components/layouts/Header';
 import ArchiveHeader from '../archive/ArchiveHeader';
 import ArchiveOnlineContent from './ArchiveOnlineContent';

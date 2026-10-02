@@ -1,7 +1,7 @@
 import { Navigate, useParams } from 'react-router';
 
 import Breadcrumb from '../../components/layouts/BreadCrumb';
-import Footer from '../../components/layouts/Footer/Index';
+import Footer from '../../components/layouts/Footer';
 import Header from '../../components/layouts/Header';
 import BackgroundDecor from './BackgroundDecor';
 import CourseDescription from './CourseDescription';
