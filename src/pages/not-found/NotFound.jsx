@@ -1,4 +1,4 @@
-import Footer from '../../components/layouts/Footer/Index';
+import Footer from '../../components/layouts/Footer';
 import Header from '../../components/layouts/Header';
 
 export default function NotFound() {
