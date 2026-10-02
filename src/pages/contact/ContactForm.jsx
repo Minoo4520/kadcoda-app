@@ -82,7 +82,7 @@ function ContactForm() {
       ) : (
         <form onSubmit={handleSubmit} className="space-y-18">
           <div>
-            <label className="mb-6 block text-xs font-bold text-gray-700 sm:text-sm md:text-[15px]">
+            <label className="mb-8 block text-xs font-bold text-gray-700 sm:text-sm">
               نام و نام خانوادگی
             </label>
             <input
@@ -91,13 +91,13 @@ function ContactForm() {
               placeholder="مثال: علی محمدی"
               value={formState.name}
               onChange={handleChange}
-              className="focus:border-primary-400 h-44 w-full rounded-[10px] border border-transparent bg-[#eef5fc] px-12 text-xs text-gray-800 placeholder-gray-400 transition-all duration-200 placeholder:text-xs focus:outline-none sm:px-16 sm:text-sm placeholder:sm:text-sm md:h-50 md:text-base placeholder:lg:text-base"
+              className="bg-primary-50 focus:ring-primary-300 w-full rounded-xl px-16 py-12 text-right text-xs outline-none placeholder:text-xs focus:ring-2 sm:text-sm placeholder:sm:text-sm"
               required
             />
           </div>
 
           <div>
-            <label className="mb-6 block text-xs font-bold text-gray-700 sm:text-sm md:text-[15px]">
+            <label className="mb-8 block text-xs font-bold text-gray-700 sm:text-sm">
               ایمیل یا شماره موبایل
             </label>
             <input
@@ -106,13 +106,13 @@ function ContactForm() {
               placeholder="مثال: 09123456789 یا email@example.com"
               value={formState.email}
               onChange={handleChange}
-              className="focus:border-primary-400 h-44 w-full rounded-[10px] border border-transparent bg-[#eef5fc] px-12 text-xs text-gray-800 placeholder-gray-400 transition-all duration-200 placeholder:text-xs focus:outline-none sm:px-16 sm:text-sm placeholder:sm:text-sm md:h-50 md:text-base placeholder:lg:text-base"
+              className="bg-primary-50 focus:ring-primary-300 w-full rounded-xl px-16 py-12 text-right text-xs outline-none placeholder:text-xs focus:ring-2 sm:text-sm placeholder:sm:text-sm"
               required
             />
           </div>
 
           <div>
-            <label className="mb-6 block text-xs font-bold text-gray-700 sm:text-sm md:text-[15px]">
+            <label className="mb-8 block text-xs font-bold text-gray-700 sm:text-sm">
               متن پیام
             </label>
             <textarea
@@ -120,7 +120,7 @@ function ContactForm() {
               placeholder="پیام یا سوال خود را اینجا بنویسید..."
               value={formState.message}
               onChange={handleChange}
-              className="focus:border-primary-400 h-100 w-full resize-none rounded-[10px] border border-transparent bg-[#eef5fc] p-12 text-xs text-gray-800 placeholder-gray-400 transition-all duration-200 placeholder:text-xs focus:outline-none sm:p-16 sm:text-sm placeholder:sm:text-sm md:h-120 md:text-base placeholder:lg:text-base"
+              className="bg-primary-50 focus:ring-primary-900 border-primary-600 w-full resize-none rounded-xl border px-16 py-36 text-right text-xs outline-none placeholder:text-xs focus:ring-2 sm:text-sm placeholder:sm:text-sm"
               required
             />
           </div>
