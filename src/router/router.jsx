@@ -4,6 +4,7 @@ import RootLayout from '../components/layouts/RootLayout';
 import About from '../pages/about';
 import Archive from '../pages/archive';
 import ArchiveOnline from '../pages/archiveOnline';
+import Collab from '../pages/collab';
 import Contact from '../pages/contact';
 import DetailCourse from '../pages/detail';
 import HomePage from '../pages/homepage';
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
           {
             path: 'contact',
             element: <Contact />,
+          },
+
+          {
+            path: 'collab',
+            element: <Collab />,
           },
 
           {
