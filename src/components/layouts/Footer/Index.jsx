@@ -94,7 +94,7 @@ export default function Footer() {
                   <Link
                     to="/"
                     className="hover:text-secondary-300 text-sm"
-                    href="#"
+                    href="/"
                   >
                     خانه
                   </Link>
@@ -117,14 +117,17 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a className="hover:text-secondary-300 text-sm" href="#">
-                    اساتید
-                  </a>
+                  <Link
+                    to="/collab"
+                    className="hover:text-secondary-300 text-sm"
+                    href="/collab"
+                  >
+                    همکاری با ما
+                  </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Courses (آکاردئونی در موبایل) */}
             <div>
               <h4
                 onClick={() => setIsCoursesOpen(!isCoursesOpen)}
@@ -138,24 +141,30 @@ export default function Footer() {
                 className={`space-y-14 ${isCoursesOpen ? 'block' : 'hidden'} lg:block`}
               >
                 <li>
-                  <a className="hover:text-secondary-300" href="#">
+                  <Link
+                    className="hover:text-secondary-300"
+                    to="/course/react-course"
+                  >
                     React
-                  </a>
+                  </Link>
                 </li>
+
                 <li>
-                  <a className="hover:text-secondary-300" href="#">
+                  <Link
+                    className="hover:text-secondary-300"
+                    to="/course/nextjs-course"
+                  >
                     Next.js
-                  </a>
+                  </Link>
                 </li>
+
                 <li>
-                  <a className="hover:text-secondary-300" href="#">
-                    Node.js
-                  </a>
-                </li>
-                <li>
-                  <a className="hover:text-secondary-300" href="#">
+                  <Link
+                    to="/course/tailwind-course"
+                    className="hover:text-secondary-300"
+                  >
                     Tailwind CSS
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

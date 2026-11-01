@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 export default function Article({ article }) {
   return (
     <Link
-      to={`/blog/${article.slug}`}
+      to={`/article/${article.slug}`}
       className="group hover:bg-primary-50 relative mb-20 block min-h-380 overflow-visible rounded-xl rounded-t-3xl bg-white shadow-lg shadow-gray-700/10 transition-all duration-300 hover:-translate-y-8 sm:min-h-470 lg:min-h-auto"
     >
       <div className="relative h-180 sm:h-310 lg:h-220">
