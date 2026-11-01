@@ -16,7 +16,7 @@ function Header() {
     { id: 3, label: 'دوره های حضوری', href: '/archive-online' },
     { id: 4, label: 'درباره کد کدا', href: '/about' },
     { id: 5, label: 'تماس با ما', href: '/contact' },
-    { id: 6, label: 'مقالات', href: '/blog' },
+    { id: 6, label: 'مقالات', href: '/articles' },
   ];
 
   return (
@@ -48,7 +48,7 @@ function Header() {
             </ul>
 
             <Link
-              to="/panel"
+              to="/login"
               className="bg-secondary-500 hover:bg-primary-900 hover:text-secondary-600 text-primary-900 hidden rounded-[5px] px-25 py-10 font-bold transition lg:inline-block"
             >
               ورود و ثبت نام
@@ -133,7 +133,7 @@ function Header() {
           ))}
           <div className="my-4 h-px bg-gray-200"></div>
           <Link
-            to="/panel"
+            to="/login"
             className="bg-primary-500 hover:bg-primary-600 rounded-[5px] px-25 py-10 text-center text-white transition"
           >
             ورود و ثبت نام
